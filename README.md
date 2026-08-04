@@ -1,45 +1,51 @@
 <div align="center">
 
-<img src="./assets/header.svg" alt="Ahmad Abdullayev — Machine Learning Engineering, Reliable AI, Evaluation Systems, and Research-Oriented Software" width="100%" />
+<img src="./assets/hero.svg" alt="Ahmad Abdullayev — Reliable Machine Learning Systems" width="100%" />
 
 <br />
 
-**Computer Engineering student building reliable machine-learning systems and research-oriented software.**
+**Computer Engineering student building evidence-driven machine-learning systems and research-oriented software.**
 
-I work across applied machine learning, rigorous evaluation, human-in-the-loop AI, and production-minded Python systems. My long-term direction is reliable AI for high-consequence domains, particularly healthcare.
+Applied ML · rigorous evaluation · human-in-the-loop AI · production-minded Python systems
 
-[Portfolio](https://github.com/ahmadabdullayew/personal-academic-website) ·
-[GitHub](https://github.com/ahmadabdullayew) ·
-[Email](mailto:ehmedmanafoghlu@gmail.com)
+[**GitHub**](https://github.com/ahmadabdullayew) &nbsp;·&nbsp;
+[**Selected work**](#selected-engineering-systems) &nbsp;·&nbsp;
+[**Email**](mailto:ehmedmanafoghlu@gmail.com)
 
 </div>
 
----
+<br />
 
-## Selected Systems
+<img src="./assets/executive-strip.svg" alt="Role, core focus, engineering standard, and long-term direction" width="100%" />
+
+## Selected Engineering Systems
 
 <table>
 <tr>
 <td width="50%" valign="top">
 
-### [ASANAppeal AI](https://github.com/ahmadabdullayew/Asan-Appeal)
+### 01 — [ASANAppeal AI](https://github.com/ahmadabdullayew/Asan-Appeal)
 
-A civic-AI workflow for structured complaint intake, routing, priority estimation, response verification, human review, privacy controls, and auditability.
+**Applied civic AI with explicit human oversight**
 
-**Engineering signal**
+A structured complaint workflow spanning intake, institutional routing, urgency estimation, response verification, privacy controls, review queues, audit trails, and operational observability.
 
-`Applied AI` `FastAPI` `Verification` `Human review`
+`FastAPI` `Applied ML` `Verification` `Privacy` `Human review`
+
+**Status:** evolving implementation and evaluation system.
 
 </td>
 <td width="50%" valign="top">
 
-### [EO Drought Intelligence](https://github.com/ahmadabdullayew/EO-Drought-Intelligence)
+### 02 — [EO Drought Intelligence](https://github.com/ahmadabdullayew/EO-Drought-Intelligence)
 
-An Earth-observation prototype that converts satellite and environmental data into drought analysis and irrigation-priority intelligence.
+**Earth-observation intelligence for constrained decisions**
 
-**Engineering signal**
+A modular prototype that converts satellite and environmental signals into drought analysis, temporal stress indicators, and irrigation-priority outputs.
 
-`Geospatial ML` `Environmental data` `Analytics` `Pipelines`
+`Geospatial ML` `EO data` `Analytics` `Pipelines` `Decision support`
+
+**Status:** hackathon prototype moving toward empirical closure.
 
 </td>
 </tr>
@@ -47,143 +53,101 @@ An Earth-observation prototype that converts satellite and environmental data in
 <tr>
 <td width="50%" valign="top">
 
-### [Neural Branch-and-Bound](https://github.com/ahmadabdullayew/DBMS-Report)
+### 03 — [Neural Branch-and-Bound](https://github.com/ahmadabdullayew/DBMS-Report)
 
-A research-oriented design for learning-augmented exact optimization in database physical design, with deterministic acceptance gates preserving solver correctness.
+**Learning-augmented optimization without surrendering exactness**
 
-**Engineering signal**
+A research design for database physical design in which learned proposals support branching, pricing, cuts, and primal construction while deterministic gates preserve solver correctness.
 
-`Optimization` `Branch-and-bound` `Research design` `Exactness`
+`Optimization` `Branch-and-bound` `Exact algorithms` `Research design`
+
+**Status:** formal technical report and experimental specification.
 
 </td>
 <td width="50%" valign="top">
 
-### [Personal Academic Website](https://github.com/ahmadabdullayew/personal-academic-website)
+### 04 — [Personal Academic Website](https://github.com/ahmadabdullayew/personal-academic-website)
 
-A reproducible academic portfolio platform with structured architecture, testing, documentation, governance, and deployment controls.
+**Reproducible engineering for an evidence-governed public portfolio**
 
-**Engineering signal**
+A Django-based academic platform with structured architecture, testing contracts, documentation, traceability, content governance, and deployment controls.
 
-`Django` `PostgreSQL` `TypeScript` `Architecture`
+`Django` `PostgreSQL` `TypeScript` `Testing` `Architecture`
+
+**Status:** implementation foundation under active development.
 
 </td>
 </tr>
 </table>
 
----
+## Engineering Method
 
-## Engineering Profile
+<img src="./assets/engineering-loop.svg" alt="Problem framing, data and baseline construction, modeling, evidence gate, integration, and operation" width="100%" />
+
+The **evidence gate** is the center of the workflow: leakage checks, validation design, calibration, error analysis, robustness testing, and explicit failure boundaries must justify integration.
+
+## Capability Matrix
+
+<img src="./assets/capability-matrix.svg" alt="Machine learning, systems engineering, and mathematical foundations capability matrix" width="100%" />
+
+## Current Frontier
 
 <table>
 <tr>
 <td width="33%" valign="top">
 
-### Machine Learning
+### Building
 
-- classical ML pipelines;
-- leakage-resistant validation;
-- calibration and abstention;
-- error analysis;
-- model comparison;
-- human-in-the-loop evaluation;
-- provenance and reproducibility.
+- reproducible ML evaluation pipelines;
+- accountable human-in-the-loop workflows;
+- production-oriented Python services;
+- clearer empirical evidence for flagship projects.
 
 </td>
 <td width="33%" valign="top">
 
-### Backend and Data
+### Studying
 
-- Python and FastAPI;
-- Django and REST APIs;
-- PostgreSQL, MySQL, SQLite;
-- authentication and authorization;
-- structured logging;
-- audit trails and observability;
-- Dockerized development.
-
-</td>
-<td width="33%" valign="top">
-
-### Research Direction
-
-- reliable and accountable AI;
-- evaluation methodology;
-- mathematical optimization;
+- proof-based mathematical foundations;
+- probability, statistics, and optimization;
 - learning-augmented algorithms;
-- healthcare-oriented ML;
-- computer vision;
-- multimodal systems.
+- reliable AI in high-consequence domains.
+
+</td>
+<td width="33%" valign="top">
+
+### Seeking
+
+- machine-learning engineering internships;
+- research collaborations;
+- serious open-source contributions;
+- projects where evaluation quality matters.
 
 </td>
 </tr>
 </table>
 
----
+## Evidence Standard
 
-## Technical Toolkit
-
-<div align="center">
-
-![Python](https://img.shields.io/badge/Python-0B1628?style=flat-square&logo=python&logoColor=56D4FF)
-![PyTorch](https://img.shields.io/badge/PyTorch-0B1628?style=flat-square&logo=pytorch&logoColor=77F2C1)
-![scikit-learn](https://img.shields.io/badge/scikit--learn-0B1628?style=flat-square&logo=scikitlearn&logoColor=56D4FF)
-![FastAPI](https://img.shields.io/badge/FastAPI-0B1628?style=flat-square&logo=fastapi&logoColor=77F2C1)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-0B1628?style=flat-square&logo=postgresql&logoColor=56D4FF)
-![Docker](https://img.shields.io/badge/Docker-0B1628?style=flat-square&logo=docker&logoColor=77F2C1)
-![Linux](https://img.shields.io/badge/Linux-0B1628?style=flat-square&logo=linux&logoColor=56D4FF)
-![Git](https://img.shields.io/badge/Git-0B1628?style=flat-square&logo=git&logoColor=77F2C1)
-
-</div>
+> **Every important claim should terminate in inspectable evidence: executable code, tests, metrics, reproducible commands, design decisions, demonstrated behavior, or explicitly documented limitations.**
 
 ```text
-Languages      Python · C · SQL · JavaScript · TypeScript
-ML and Data    scikit-learn · PyTorch · pandas · NumPy
-Backend        FastAPI · Django · Pydantic
-Databases      PostgreSQL · MySQL · SQLite
-Engineering    Git · GitHub · Linux · Docker · pytest
-Foundations    Calculus · Linear Algebra · Probability · Statistics · Optimization
+prototype ≠ production
+activity  ≠ competence
+complexity ≠ rigor
+architecture ≠ evidence
+confidence ≠ calibration
 ```
 
----
+My operating principles:
 
-## Current Direction
+1. Frame the real decision problem before selecting a model.
+2. Treat validation design as part of the system architecture.
+3. Prefer reproducible baselines over fashionable complexity.
+4. Make uncertainty, abstention, and human escalation explicit.
+5. Separate proposed, implemented, evaluated, and deployed capabilities.
+6. Engineer the surrounding software with the same rigor as the model.
 
-```yaml
-building:
-  - reproducible ML evaluation pipelines
-  - accountable human-in-the-loop AI systems
-  - production-oriented Python services
+<br />
 
-studying:
-  - mathematical foundations for machine learning
-  - optimization and learning-augmented algorithms
-  - reliable AI for high-consequence domains
-
-seeking:
-  - machine learning engineering internships
-  - research collaborations
-  - technically substantial open-source work
-```
-
----
-
-## Engineering Principles
-
-> **Claims should terminate in evidence: executable code, tests, metrics, reproducible commands, inspectable design decisions, or explicitly documented limitations.**
-
-1. Evaluation must reflect the real deployment problem.
-2. Reproducibility is part of implementation—not an afterthought.
-3. A prototype must be labeled honestly as a prototype.
-4. Uncertainty and failure modes should be visible.
-5. Architecture should support working software rather than replace it.
-6. Visual design should improve comprehension, not conceal weak evidence.
-
----
-
-<div align="center">
-
-### Build systems that can be inspected, evaluated, and trusted.
-
-<sub>Baku, Azerbaijan · Computer Engineering at Khazar University</sub>
-
-</div>
+<img src="./assets/footer.svg" alt="Build systems that can be inspected, evaluated, and trusted" width="100%" />
