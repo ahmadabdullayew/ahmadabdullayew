@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="360" viewBox="0 0 1280 360" role="img" aria-labelledby="title desc">
+  <title id="title">Ahmad Abdullayev — Machine Learning Engineer</title>
+  <desc id="desc">Dark technical banner with a subtle grid, machine-learning system nodes, and professional identity text.</desc>
+
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#07111f"/>
+      <stop offset="55%" stop-color="#0b1628"/>
+      <stop offset="100%" stop-color="#101827"/>
+    </linearGradient>
+
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#56d4ff"/>
+      <stop offset="100%" stop-color="#77f2c1"/>
+    </linearGradient>
+
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M 32 0 L 0 0 0 32" fill="none" stroke="#29415f" stroke-width="1" opacity="0.20"/>
+    </pattern>
+
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect width="1280" height="360" rx="24" fill="url(#bg)"/>
+  <rect width="1280" height="360" rx="24" fill="url(#grid)"/>
+
+  <circle cx="1120" cy="70" r="190" fill="#163354" opacity="0.20"/>
+  <circle cx="1185" cy="300" r="150" fill="#123e3b" opacity="0.18"/>
+
+  <g transform="translate(72,70)">
+    <rect x="0" y="0" width="8" height="220" rx="4" fill="url(#accent)"/>
+
+    <text x="36" y="52" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="24" font-weight="600" letter-spacing="4" fill="#75e5ff">
+      AHMAD ABDULLAYEV
+    </text>
+
+    <text x="36" y="116" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="48" font-weight="700" fill="#f4f8ff">
+      Machine Learning Engineering
+    </text>
+
+    <text x="36" y="164" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="25" font-weight="500" fill="#a9b8cc">
+      Reliable AI · Evaluation Systems · Research-Oriented Software
+    </text>
+
+    <g transform="translate(36,196)">
+      <rect x="0" y="0" width="154" height="38" rx="19" fill="#10253a" stroke="#2c7090"/>
+      <text x="77" y="25" text-anchor="middle" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="15" font-weight="600" fill="#8fe8ff">
+        PYTHON / ML
+      </text>
+
+      <rect x="170" y="0" width="194" height="38" rx="19" fill="#102b2c" stroke="#2e806f"/>
+      <text x="267" y="25" text-anchor="middle" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="15" font-weight="600" fill="#9ff2d6">
+        HUMAN-IN-THE-LOOP
+      </text>
+
+      <rect x="380" y="0" width="168" height="38" rx="19" fill="#172237" stroke="#4b668d"/>
+      <text x="464" y="25" text-anchor="middle" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="15" font-weight="600" fill="#c2d2e8">
+        REPRODUCIBILITY
+      </text>
+    </g>
+  </g>
+
+  <g transform="translate(945,73)" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M50 120 L138 45 L222 105 L165 215 L72 222 Z" fill="none" stroke="#3a5b7c" stroke-width="2"/>
+    <path d="M50 120 L165 215 M138 45 L72 222 M222 105 L72 222 M138 45 L165 215" fill="none" stroke="#2b4663" stroke-width="2" opacity="0.75"/>
+
+    <g filter="url(#glow)">
+      <circle cx="50" cy="120" r="8" fill="#56d4ff"/>
+      <circle cx="138" cy="45" r="8" fill="#77f2c1"/>
+      <circle cx="222" cy="105" r="8" fill="#56d4ff"/>
+      <circle cx="165" cy="215" r="8" fill="#77f2c1"/>
+      <circle cx="72" cy="222" r="8" fill="#56d4ff"/>
+    </g>
+
+    <rect x="85" y="92" width="100" height="70" rx="12" fill="#0d1c2c" stroke="#3d6989"/>
+    <text x="135" y="121" text-anchor="middle" font-family="monospace" font-size="13" fill="#8fe8ff">evaluate()</text>
+    <text x="135" y="143" text-anchor="middle" font-family="monospace" font-size="12" fill="#9ff2d6">verify → ship</text>
+  </g>
+
+  <text x="1198" y="330" text-anchor="end" font-family="monospace" font-size="13" fill="#5f7896">
+    evidence over decoration
+  </text>
+</svg>
