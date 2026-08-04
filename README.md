@@ -1,76 +1,178 @@
 <div align="center">
 
-<h1>Ahmad Abdullayev</h1>
+# Ahmad Abdullayev
 
-<p><strong>Computer Engineering · Machine Learning Systems</strong></p>
+### Computer Engineering · Machine Learning Systems
 
-<a href="https://github.com/DenverCoder1/readme-typing-svg">
-  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&amp;weight=500&amp;size=20&amp;duration=2800&amp;pause=900&amp;color=2F81F7&amp;center=true&amp;vCenter=true&amp;repeat=true&amp;width=760&amp;height=45&amp;lines=Machine+Learning+Engineering;Reliable+AI+%C2%B7+Evaluation+%C2%B7+Human-in-the-loop;Build+%E2%86%92+Measure+%E2%86%92+Explain+%E2%86%92+Improve" alt="Machine Learning Engineering; Reliable AI, evaluation, and human-in-the-loop systems" />
-</a>
+**Building measurable, reproducible, and reviewable machine-learning systems.**
 
 <p>
-  <a href="mailto:ehmedmanafoghlu@gmail.com"><img src="https://img.shields.io/badge/Email-161B22?style=flat-square&amp;logo=gmail&amp;logoColor=white" alt="Email Ahmad Abdullayev" /></a>
-  <a href="https://www.linkedin.com/in/ahmad-abdullayev-826816289/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&amp;logo=linkedin&amp;logoColor=white" alt="Ahmad Abdullayev on LinkedIn" /></a>
-  <img src="https://img.shields.io/badge/Baku%2C_Azerbaijan-161B22?style=flat-square&amp;logo=googlemaps&amp;logoColor=white" alt="Baku, Azerbaijan" />
-  <img src="https://komarev.com/ghpvc/?username=ahmadabdullayew&amp;label=Profile%20views&amp;color=2F81F7&amp;style=flat-square" alt="Profile views" />
+  <a href="mailto:ehmedmanafoghlu@gmail.com">
+    <img src="https://img.shields.io/badge/Email-161B22?style=flat-square&logo=gmail&logoColor=white" alt="Email Ahmad Abdullayev" />
+  </a>
+  <a href="https://www.linkedin.com/in/ahmad-abdullayev-826816289/">
+    <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white" alt="Ahmad Abdullayev on LinkedIn" />
+  </a>
+  <img src="https://img.shields.io/badge/Baku%2C_Azerbaijan-161B22?style=flat-square&logo=googlemaps&logoColor=white" alt="Baku, Azerbaijan" />
+  <img src="https://img.shields.io/badge/Open_to-ML_Engineering_Internships-1F6FEB?style=flat-square" alt="Open to machine-learning engineering internships" />
 </p>
 
 </div>
 
+---
+
 ## Engineering profile
 
-I am a Computer Engineering student at **Khazar University**, focused on building machine-learning systems that are measurable, reproducible, and safe to review.
+I am a Computer Engineering student at **Khazar University**, focused on building machine-learning systems that can be inspected, evaluated, and improved with confidence.
+
+My work emphasizes the engineering around the model: validation design, reproducibility, typed interfaces, observability, human review, and explicit limitations.
 
 > **Engineering standard:** every important model claim should terminate in inspectable evidence—working code, tests, metrics, reproducible commands, or documented limitations.
 
-| Focus | What that means in practice |
-| :--- | :--- |
-| **Reliable ML** | Leakage-resistant validation, calibration, abstention, error analysis, and explicit limitations |
-| **Production systems** | Typed interfaces, reproducible pipelines, observability, testing, and failure-aware design |
-| **Human oversight** | Confidence-aware review queues, audit trails, explanations, and safe fallback paths |
-| **Applied domains** | Health, civic systems, and Earth-observation intelligence |
+<table>
+<tr>
+<td width="50%" valign="top">
+
+### Reliable machine learning
+
+- leakage-resistant validation;
+- calibration and abstention;
+- error analysis;
+- explicit failure boundaries;
+- documented limitations.
+
+</td>
+<td width="50%" valign="top">
+
+### Production-oriented systems
+
+- typed interfaces;
+- reproducible pipelines;
+- testing and CI;
+- observability;
+- failure-aware design.
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+### Human oversight
+
+- confidence-aware review;
+- audit trails;
+- explanations;
+- safe fallback paths;
+- accountable decisions.
+
+</td>
+<td width="50%" valign="top">
+
+### Applied domains
+
+- healthcare-adjacent ML;
+- civic systems;
+- Earth-observation intelligence;
+- research-oriented engineering;
+- high-consequence AI.
+
+</td>
+</tr>
+</table>
+
+---
 
 ## Selected engineering work
 
-| Project | What it demonstrates |
-| :--- | :--- |
-| **[ASANAppeal AI](https://github.com/ahmadabdullayew/Asan-Appeal)**<br><sub>Python · FastAPI · SQLite</sub> | An end-to-end, local-first civic-AI backend for intake, routing, priority scoring, drafting, response verification, and human review. Includes role-based access, an append-only audit ledger, privacy controls, observability, and testable local execution. |
-| **[EO Drought Intelligence](https://github.com/ahmadabdullayew/EO-Drought-Intelligence)**<br><sub>Python · EO analytics · ML pipelines</sub> | An architecture-first platform that turns Earth-observation and environmental signals into drought analysis and irrigation priorities, with clean separation from ingestion through evaluation and inference. |
-| **[Personal Academic Website](https://github.com/ahmadabdullayew/personal-academic-website)**<br><sub>Django · TypeScript · PostgreSQL · AWS</sub> | An evidence-led web platform with documented architecture, strict formatting/linting/typing/testing/build gates, privacy boundaries, and a production deployment design. |
+### [ASANAppeal AI](https://github.com/ahmadabdullayew/Asan-Appeal)
 
-## Technical toolkit
+**Human-in-the-loop civic AI for complaint intake, routing, priority estimation, drafting, response verification, and review.**
 
-**Machine learning and data**
+The project combines a local-first backend with role-based access, privacy controls, an append-only audit trail, observability, and testable execution.
 
-<p>
-  <img src="https://img.shields.io/badge/Python-161B22?style=flat-square&amp;logo=python&amp;logoColor=white" alt="Python" />
-  <img src="https://img.shields.io/badge/PyTorch-161B22?style=flat-square&amp;logo=pytorch&amp;logoColor=white" alt="PyTorch" />
-  <img src="https://img.shields.io/badge/scikit--learn-161B22?style=flat-square&amp;logo=scikitlearn&amp;logoColor=white" alt="scikit-learn" />
-  <img src="https://img.shields.io/badge/NumPy-161B22?style=flat-square&amp;logo=numpy&amp;logoColor=white" alt="NumPy" />
-  <img src="https://img.shields.io/badge/pandas-161B22?style=flat-square&amp;logo=pandas&amp;logoColor=white" alt="pandas" />
-</p>
+`Python` `FastAPI` `SQLite` `Human-in-the-loop` `Auditability`
 
-**Applications and data systems**
+---
 
-<p>
-  <img src="https://img.shields.io/badge/FastAPI-161B22?style=flat-square&amp;logo=fastapi&amp;logoColor=white" alt="FastAPI" />
-  <img src="https://img.shields.io/badge/Django-161B22?style=flat-square&amp;logo=django&amp;logoColor=white" alt="Django" />
-  <img src="https://img.shields.io/badge/PostgreSQL-161B22?style=flat-square&amp;logo=postgresql&amp;logoColor=white" alt="PostgreSQL" />
-  <img src="https://img.shields.io/badge/SQLite-161B22?style=flat-square&amp;logo=sqlite&amp;logoColor=white" alt="SQLite" />
-</p>
+### [EO Drought Intelligence](https://github.com/ahmadabdullayew/EO-Drought-Intelligence)
 
-**Engineering environment**
+**Earth-observation and environmental intelligence for drought analysis and irrigation prioritization.**
 
-<p>
-  <img src="https://img.shields.io/badge/Linux-161B22?style=flat-square&amp;logo=linux&amp;logoColor=white" alt="Linux" />
-  <img src="https://img.shields.io/badge/Git-161B22?style=flat-square&amp;logo=git&amp;logoColor=white" alt="Git" />
-  <img src="https://img.shields.io/badge/Docker-161B22?style=flat-square&amp;logo=docker&amp;logoColor=white" alt="Docker" />
-  <img src="https://img.shields.io/badge/pytest-161B22?style=flat-square&amp;logo=pytest&amp;logoColor=white" alt="pytest" />
-  <img src="https://img.shields.io/badge/GitHub_Actions-161B22?style=flat-square&amp;logo=githubactions&amp;logoColor=white" alt="GitHub Actions" />
-</p>
+The architecture separates ingestion, feature construction, analysis, evaluation, and inference so that each stage can be inspected and improved independently.
 
-## Let's build something rigorous
+`Python` `Earth Observation` `ML Pipelines` `Environmental Analytics`
 
-I am open to **machine-learning engineering internships**, research-oriented collaboration, and technically rigorous open-source work.
+---
 
-**[Email](mailto:ehmedmanafoghlu@gmail.com)** · **[LinkedIn](https://www.linkedin.com/in/ahmad-abdullayev-826816289/)** · **[GitHub](https://github.com/ahmadabdullayew)**
+### [Personal Academic Website](https://github.com/ahmadabdullayew/personal-academic-website)
+
+**An evidence-led academic portfolio platform with explicit quality and deployment controls.**
+
+The project uses a documented architecture and engineering gates across formatting, linting, typing, testing, build validation, privacy boundaries, and deployment design.
+
+`Django` `TypeScript` `PostgreSQL` `AWS` `Testing`
+
+---
+
+## Technical foundation
+
+<table>
+<tr>
+<td width="33%" valign="top">
+
+### Machine learning
+
+`Python`  
+`PyTorch`  
+`scikit-learn`  
+`NumPy`  
+`pandas`
+
+</td>
+<td width="33%" valign="top">
+
+### Applications and data
+
+`FastAPI`  
+`Django`  
+`PostgreSQL`  
+`SQLite`  
+`REST APIs`
+
+</td>
+<td width="33%" valign="top">
+
+### Engineering environment
+
+`Linux`  
+`Git`  
+`Docker`  
+`pytest`  
+`GitHub Actions`
+
+</td>
+</tr>
+</table>
+
+---
+
+## Current direction
+
+```text
+Building   reproducible ML evaluation pipelines
+Studying   mathematical foundations, probability, statistics, and optimization
+Exploring  reliable AI for healthcare and other high-consequence domains
+Seeking    ML engineering internships and research-oriented collaboration
+```
+
+---
+
+<div align="center">
+
+### Build systems that can be measured, explained, and trusted.
+
+[Email](mailto:ehmedmanafoghlu@gmail.com) ·
+[LinkedIn](https://www.linkedin.com/in/ahmad-abdullayev-826816289/) ·
+[GitHub](https://github.com/ahmadabdullayew)
+
+</div>
