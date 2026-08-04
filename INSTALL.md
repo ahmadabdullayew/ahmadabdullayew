@@ -1,20 +1,59 @@
-# Installation
+# Install Profile V3
 
-1. Create a public GitHub repository named exactly:
+Target repository:
 
-   ahmadabdullayew
+```text
+https://github.com/ahmadabdullayew/ahmadabdullayew
+```
 
-2. Upload:
-   - README.md
-   - assets/header.svg
+## Safe update from Ubuntu
 
-3. Replace:
-   YOUR_EMAIL@example.com
+```bash
+cd ~/Projects
 
-4. Pin the strongest repositories in this order:
-   - Asan-Appeal
-   - EO-Drought-Intelligence
-   - DBMS-Report
-   - personal-academic-website
+rm -rf ahmadabdullayew-profile-repo
 
-5. Keep the repository public and use `main` as the default branch.
+git clone \
+  https://github.com/ahmadabdullayew/ahmadabdullayew.git \
+  ahmadabdullayew-profile-repo
+
+cd ahmadabdullayew-profile-repo
+```
+
+Copy the V3 package contents into the clone:
+
+```bash
+cp -a \
+  ~/Projects/ahmadabdullayew-profile-v3/. \
+  ~/Projects/ahmadabdullayew-profile-repo/
+```
+
+Review:
+
+```bash
+cd ~/Projects/ahmadabdullayew-profile-repo
+
+git status
+git diff -- README.md
+find assets profile .github/workflows -maxdepth 2 -type f | sort
+```
+
+Publish:
+
+```bash
+git add \
+  README.md \
+  INSTALL.md \
+  SETUP_WIDGETS.md \
+  assets/ \
+  profile/ \
+  optional/ \
+  .github/workflows/
+
+git commit -m \
+  "feat(profile): add curated visual analytics system"
+
+git push origin main
+```
+
+Then follow `SETUP_WIDGETS.md`.

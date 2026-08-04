@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="460" viewBox="0 0 1400 460" role="img" aria-labelledby="title desc">
+<title id="title">Extended Public Metrics</title>
+<desc id="desc">Add the METRICS_TOKEN secret, then run “Update extended metrics”.</desc>
+<rect width="1400" height="460" rx="14" fill="#0B1320" stroke="#263B54"/>
+<rect x="22" y="22" width="6" height="416" rx="3" fill="#70E1C1"/>
+<text x="48" y="220.0" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="19" font-weight="700" fill="#F1F5FB">Extended Public Metrics</text>
+<text x="48" y="252.0" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="13" fill="#8FA2B8">Add the METRICS_TOKEN secret, then run “Update extended metrics”.</text>
+</svg>

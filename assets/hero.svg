@@ -86,7 +86,7 @@
     <text x="232" y="218" fill="#A8B6CA">,</text>
 
     <text x="28" y="252" fill="#A8B6CA">)</text>
-    <text x="28" y="286" fill="#6E7E93"># inspect → evaluate → verify → ship</text>
+    <text x="28" y="286" fill="#6E7E93"># inspect -> evaluate -> verify -> ship</text>
   </g>
 </g>
 

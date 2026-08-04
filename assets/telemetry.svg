@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="190" viewBox="0 0 1400 190" role="img" aria-labelledby="title desc">
+<title id="title">Public engineering telemetry</title>
+<desc id="desc">A restrained visual header explaining that public GitHub activity metrics provide context but do not independently establish engineering competence.</desc>
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0%" stop-color="#080E18"/>
+    <stop offset="100%" stop-color="#101A2A"/>
+  </linearGradient>
+  <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0%" stop-color="#5DDCFF"/>
+    <stop offset="55%" stop-color="#70E1C1"/>
+    <stop offset="100%" stop-color="#A78BFA"/>
+  </linearGradient>
+</defs>
+<rect width="1400" height="190" rx="24" fill="url(#bg)"/>
+<rect x="48" y="38" width="8" height="112" rx="4" fill="url(#accent)"/>
+<g font-family="Inter,Segoe UI,Arial,sans-serif">
+  <text x="82" y="69" font-size="14" font-weight="800" letter-spacing="3" fill="#72DFFF">PUBLIC ENGINEERING TELEMETRY</text>
+  <text x="82" y="110" font-size="29" font-weight="750" fill="#F1F5FB">Activity is context—not a substitute for evidence.</text>
+  <text x="82" y="141" font-size="16" fill="#98A9BE">Repository statistics, language mix, contribution cadence, and recent activity are shown only as secondary signals.</text>
+</g>
+<g transform="translate(1110 57)" font-family="ui-monospace,SFMono-Regular,Consolas,monospace">
+  <rect width="224" height="78" rx="14" fill="#0C1725" stroke="#2B4059"/>
+  <text x="18" y="31" font-size="13" fill="#70E1C1">metrics.context</text>
+  <text x="18" y="56" font-size="13" fill="#A8B6CA">!= competence.proof</text>
+</g>
+</svg>
