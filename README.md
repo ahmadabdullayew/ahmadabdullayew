@@ -206,13 +206,15 @@ confidence   != calibration
 5. Separate proposed, implemented, evaluated, deployed, and operated capabilities.
 6. Engineer the surrounding software with the same rigor as the model.
 
+### Additional Evidence Case Study
+
+The
+[breast-cancer-detection-portfolio](https://github.com/ahmadabdullayew/breast-cancer-detection-portfolio)
+applies this evidence standard to a healthcare-adjacent machine-learning problem.
+Its model card, evaluation protocol, data documentation, and limitations record
+are maintained alongside the implementation rather than treated as retrospective
+documentation.
+
 <br />
 
 <img src="./assets/footer.svg" alt="Build systems that can be inspected, evaluated, and trusted" width="100%" />
-
-<div align="center">
-  <img
-    src="https://komarev.com/ghpvc/?username=ahmadabdullayew&label=PROFILE+VIEWS&color=263B54&style=flat-square&abbreviated=true"
-    alt="Profile view counter; a lightweight traffic indicator, not a credibility metric"
-  />
-</div>
