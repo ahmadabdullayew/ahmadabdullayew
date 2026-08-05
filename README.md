@@ -1,169 +1,181 @@
 <div align="center">
 
-# Ahmad Abdullayev
+<img src="./assets/hero.svg" alt="Ahmad Abdullayev — Evidence-first machine-learning systems" width="100%" />
 
-### Computer Engineering · Machine Learning Systems
+<br />
 
-**Building measurable, reproducible, and reviewable machine-learning systems.**
-
-<p>
-  <a href="mailto:ehmedmanafoghlu@gmail.com">
-    <img src="https://img.shields.io/badge/Email-161B22?style=flat-square&logo=gmail&logoColor=white" alt="Email Ahmad Abdullayev" />
-  </a>
-  <a href="https://www.linkedin.com/in/ahmad-abdullayev-826816289/">
-    <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white" alt="Ahmad Abdullayev on LinkedIn" />
-  </a>
-  <img src="https://img.shields.io/badge/Baku%2C_Azerbaijan-161B22?style=flat-square&logo=googlemaps&logoColor=white" alt="Baku, Azerbaijan" />
-  <img src="https://img.shields.io/badge/Open_to-ML_Engineering_Internships-1F6FEB?style=flat-square" alt="Open to machine-learning engineering internships" />
-</p>
+<a href="mailto:ehmedmanafoghlu@gmail.com">
+  <img src="https://img.shields.io/badge/Email-161B22?style=flat-square&logo=gmail&logoColor=white" alt="Email Ahmad Abdullayev" />
+</a>
+<a href="https://www.linkedin.com/in/ahmad-abdullayev-826816289/">
+  <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white" alt="Ahmad Abdullayev on LinkedIn" />
+</a>
+<a href="https://github.com/ahmadabdullayew">
+  <img src="https://img.shields.io/badge/GitHub-161B22?style=flat-square&logo=github&logoColor=white" alt="Ahmad Abdullayev on GitHub" />
+</a>
+<img src="https://img.shields.io/badge/Computer_Engineering-Khazar_University-161B22?style=flat-square" alt="Computer Engineering at Khazar University" />
 
 </div>
 
----
-
 ## Engineering profile
 
-I am a Computer Engineering student at **Khazar University**, focused on building machine-learning systems that can be inspected, evaluated, and improved with confidence.
-
-My work emphasizes the engineering around the model: validation design, reproducibility, typed interfaces, observability, human review, and explicit limitations.
-
-> **Engineering standard:** every important model claim should terminate in inspectable evidence—working code, tests, metrics, reproducible commands, or documented limitations.
+I am a Computer Engineering student focused on building machine-learning systems that remain understandable **after** the model leaves the notebook.
 
 <table>
 <tr>
 <td width="50%" valign="top">
 
-### Reliable machine learning
+### What I build
 
-- leakage-resistant validation;
-- calibration and abstention;
-- error analysis;
-- explicit failure boundaries;
-- documented limitations.
-
-</td>
-<td width="50%" valign="top">
-
-### Production-oriented systems
-
-- typed interfaces;
-- reproducible pipelines;
-- testing and CI;
-- observability;
-- failure-aware design.
-
-</td>
-</tr>
-<tr>
-<td width="50%" valign="top">
-
-### Human oversight
-
-- confidence-aware review;
-- audit trails;
-- explanations;
-- safe fallback paths;
-- accountable decisions.
+- applied machine-learning services;
+- reproducible evaluation pipelines;
+- human-in-the-loop decision workflows;
+- research-oriented engineering prototypes.
 
 </td>
 <td width="50%" valign="top">
 
-### Applied domains
+### What I optimize for
 
-- healthcare-adjacent ML;
-- civic systems;
-- Earth-observation intelligence;
-- research-oriented engineering;
-- high-consequence AI.
+- correctness before complexity;
+- validation before confident claims;
+- visible failure modes;
+- typed, testable system boundaries;
+- evidence that another engineer can inspect.
 
 </td>
 </tr>
 </table>
 
----
+> **Engineering thesis:** a model is not a system, and a metric is not evidence until the evaluation design, assumptions, limitations, and execution path can be inspected.
 
-## Selected engineering work
+## Selected systems
+
+<table>
+<tr>
+<td width="50%" valign="top">
 
 ### [ASANAppeal AI](https://github.com/ahmadabdullayew/Asan-Appeal)
 
-**Human-in-the-loop civic AI for complaint intake, routing, priority estimation, drafting, response verification, and review.**
+**Runnable backend foundation · Civic AI**
 
-The project combines a local-first backend with role-based access, privacy controls, an append-only audit trail, observability, and testable execution.
+Complaint intake, institutional routing, priority scoring, appeal drafting, response verification, explanation generation, and human-review fallback.
 
-`Python` `FastAPI` `SQLite` `Human-in-the-loop` `Auditability`
+The implementation includes role-based access, SQLite persistence, evidence storage, append-only audit logging, privacy controls, abuse protection, and operational observability.
 
----
+`Python` `FastAPI` `SQLite` `Human review`
+
+</td>
+<td width="50%" valign="top">
 
 ### [EO Drought Intelligence](https://github.com/ahmadabdullayew/EO-Drought-Intelligence)
 
-**Earth-observation and environmental intelligence for drought analysis and irrigation prioritization.**
+**Hackathon prototype · Earth observation**
 
-The architecture separates ingestion, feature construction, analysis, evaluation, and inference so that each stage can be inspected and improved independently.
+A layered Python system that turns Earth-observation and environmental signals into drought analysis, temporal stress indicators, and irrigation-priority outputs.
 
-`Python` `Earth Observation` `ML Pipelines` `Environmental Analytics`
+The architecture separates ingestion, processing, analytics, model development, evaluation, inference, and interfaces.
 
----
+`Python` `EO data` `ML pipelines` `Decision support`
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+### [Neural Branch-and-Bound](https://github.com/ahmadabdullayew/DBMS-Report)
+
+**Formal technical report · Learning-augmented optimization**
+
+An exact database physical-design accelerator combining branch-and-bound, column generation, and cutting planes.
+
+Learned proposals remain advisory; deterministic acceptance gates preserve solver correctness and exactness.
+
+`Optimization` `Database systems` `Research design`
+
+</td>
+<td width="50%" valign="top">
 
 ### [Personal Academic Website](https://github.com/ahmadabdullayew/personal-academic-website)
 
-**An evidence-led academic portfolio platform with explicit quality and deployment controls.**
+**Implementation foundation · Evidence-governed software**
 
-The project uses a documented architecture and engineering gates across formatting, linting, typing, testing, build validation, privacy boundaries, and deployment design.
+A Django-based academic platform with reproducible Python and Node toolchains, architecture decisions, governance controls, strict quality gates, and a production deployment design.
 
-`Django` `TypeScript` `PostgreSQL` `AWS` `Testing`
+The public surface is intentionally narrow until personal and academic claims have approved source records.
 
----
-
-## Technical foundation
-
-<table>
-<tr>
-<td width="33%" valign="top">
-
-### Machine learning
-
-`Python`  
-`PyTorch`  
-`scikit-learn`  
-`NumPy`  
-`pandas`
-
-</td>
-<td width="33%" valign="top">
-
-### Applications and data
-
-`FastAPI`  
-`Django`  
-`PostgreSQL`  
-`SQLite`  
-`REST APIs`
-
-</td>
-<td width="33%" valign="top">
-
-### Engineering environment
-
-`Linux`  
-`Git`  
-`Docker`  
-`pytest`  
-`GitHub Actions`
+`Django` `TypeScript` `PostgreSQL` `Testing`
 
 </td>
 </tr>
 </table>
 
----
+## Operating model
 
-## Current direction
+<img src="./assets/ml-system.svg" alt="Evidence-first machine-learning engineering operating model" width="100%" />
+
+## Technical foundation
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Python-161B22?style=flat-square&logo=python&logoColor=3776AB" alt="Python" />
+  <img src="https://img.shields.io/badge/PyTorch-161B22?style=flat-square&logo=pytorch&logoColor=EE4C2C" alt="PyTorch" />
+  <img src="https://img.shields.io/badge/scikit--learn-161B22?style=flat-square&logo=scikitlearn&logoColor=F7931E" alt="scikit-learn" />
+  <img src="https://img.shields.io/badge/NumPy-161B22?style=flat-square&logo=numpy&logoColor=4D77CF" alt="NumPy" />
+  <img src="https://img.shields.io/badge/pandas-161B22?style=flat-square&logo=pandas&logoColor=E70488" alt="pandas" />
+  <img src="https://img.shields.io/badge/FastAPI-161B22?style=flat-square&logo=fastapi&logoColor=009688" alt="FastAPI" />
+  <img src="https://img.shields.io/badge/Django-161B22?style=flat-square&logo=django&logoColor=44B78B" alt="Django" />
+  <img src="https://img.shields.io/badge/PostgreSQL-161B22?style=flat-square&logo=postgresql&logoColor=4169E1" alt="PostgreSQL" />
+  <img src="https://img.shields.io/badge/Docker-161B22?style=flat-square&logo=docker&logoColor=2496ED" alt="Docker" />
+  <img src="https://img.shields.io/badge/Linux-161B22?style=flat-square&logo=linux&logoColor=FCC624" alt="Linux" />
+  <img src="https://img.shields.io/badge/pytest-161B22?style=flat-square&logo=pytest&logoColor=0A9EDC" alt="pytest" />
+  <img src="https://img.shields.io/badge/GitHub_Actions-161B22?style=flat-square&logo=githubactions&logoColor=2088FF" alt="GitHub Actions" />
+</p>
+
+<table>
+<tr>
+<td width="33%" valign="top">
+
+### Building
+
+- reproducible ML evaluation;
+- accountable review workflows;
+- production-minded Python services.
+
+</td>
+<td width="33%" valign="top">
+
+### Studying
+
+- proof-based mathematics;
+- probability and statistics;
+- optimization and algorithms.
+
+</td>
+<td width="33%" valign="top">
+
+### Seeking
+
+- ML engineering internships;
+- research collaboration;
+- rigorous open-source work.
+
+</td>
+</tr>
+</table>
+
+## Evidence standard
 
 ```text
-Building   reproducible ML evaluation pipelines
-Studying   mathematical foundations, probability, statistics, and optimization
-Exploring  reliable AI for healthcare and other high-consequence domains
-Seeking    ML engineering internships and research-oriented collaboration
+prototype    != production
+activity     != competence
+complexity   != rigor
+confidence   != calibration
+automation   != accountability
 ```
+
+Every important claim should terminate in at least one inspectable artifact:
+
+`code` · `tests` · `metrics` · `reproducible commands` · `design decisions` · `documented limitations`
 
 ---
 
@@ -173,6 +185,6 @@ Seeking    ML engineering internships and research-oriented collaboration
 
 [Email](mailto:ehmedmanafoghlu@gmail.com) ·
 [LinkedIn](https://www.linkedin.com/in/ahmad-abdullayev-826816289/) ·
-[GitHub](https://github.com/ahmadabdullayew)
+[Selected work](#selected-systems)
 
 </div>

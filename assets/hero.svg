@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="340" viewBox="0 0 1200 340" role="img" aria-labelledby="title desc">
+  <title id="title">Ahmad Abdullayev — Evidence-first machine learning systems</title>
+  <desc id="desc">Professional GitHub profile banner with a restrained technical grid, machine-learning system nodes, and a concise engineering statement.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0d1117"/>
+      <stop offset="0.55" stop-color="#111827"/>
+      <stop offset="1" stop-color="#0b1324"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#58a6ff"/>
+      <stop offset="0.52" stop-color="#70e1c1"/>
+      <stop offset="1" stop-color="#a78bfa"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0" stop-color="#58a6ff" stop-opacity=".22"/>
+      <stop offset="1" stop-color="#58a6ff" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid" width="42" height="42" patternUnits="userSpaceOnUse">
+      <path d="M42 0H0V42" fill="none" stroke="#30363d" stroke-width="1" opacity=".28"/>
+    </pattern>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000" flood-opacity=".34"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="340" rx="24" fill="url(#bg)"/>
+  <rect width="1200" height="340" rx="24" fill="url(#grid)"/>
+  <circle cx="972" cy="125" r="210" fill="url(#glow)"/>
+
+  <g opacity=".78" stroke-linecap="round">
+    <path d="M858 87L943 52L1036 98L1114 60" stroke="#58a6ff" stroke-width="1.5"/>
+    <path d="M843 175L928 126L1023 168L1117 126" stroke="#70e1c1" stroke-width="1.5"/>
+    <path d="M885 246L972 202L1060 246L1137 206" stroke="#a78bfa" stroke-width="1.5"/>
+    <path d="M943 52L928 126L972 202" stroke="#3fb950" stroke-width="1.2" opacity=".75"/>
+    <path d="M1036 98L1023 168L1060 246" stroke="#58a6ff" stroke-width="1.2" opacity=".75"/>
+  </g>
+
+  <g filter="url(#shadow)">
+    <g fill="#0d1117" stroke-width="2">
+      <circle cx="858" cy="87" r="8" stroke="#58a6ff"/>
+      <circle cx="943" cy="52" r="8" stroke="#70e1c1"/>
+      <circle cx="1036" cy="98" r="8" stroke="#a78bfa"/>
+      <circle cx="1114" cy="60" r="8" stroke="#58a6ff"/>
+      <circle cx="843" cy="175" r="8" stroke="#70e1c1"/>
+      <circle cx="928" cy="126" r="8" stroke="#58a6ff"/>
+      <circle cx="1023" cy="168" r="8" stroke="#70e1c1"/>
+      <circle cx="1117" cy="126" r="8" stroke="#a78bfa"/>
+      <circle cx="885" cy="246" r="8" stroke="#a78bfa"/>
+      <circle cx="972" cy="202" r="8" stroke="#70e1c1"/>
+      <circle cx="1060" cy="246" r="8" stroke="#58a6ff"/>
+      <circle cx="1137" cy="206" r="8" stroke="#70e1c1"/>
+    </g>
+  </g>
+
+  <rect x="58" y="49" width="254" height="32" rx="16" fill="#161b22" stroke="#30363d"/>
+  <circle cx="78" cy="65" r="5" fill="#3fb950"/>
+  <text x="93" y="70" fill="#8b949e" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="13" font-weight="700" letter-spacing="1.7">AHMAD ABDULLAYEV / ML SYSTEMS</text>
+
+  <text x="58" y="147" fill="#f0f6fc" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="46" font-weight="750">Evidence-first</text>
+  <text x="58" y="202" fill="url(#accent)" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="46" font-weight="750">machine learning</text>
+  <text x="60" y="242" fill="#c9d1d9" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="18">Reliable evaluation · Human oversight · Production-minded engineering</text>
+
+  <g font-family="Inter,Segoe UI,Arial,sans-serif" font-size="13" font-weight="650">
+    <rect x="58" y="277" width="144" height="34" rx="17" fill="#161b22" stroke="#30363d"/>
+    <text x="78" y="299" fill="#c9d1d9">Baku, Azerbaijan</text>
+    <rect x="214" y="277" width="145" height="34" rx="17" fill="#161b22" stroke="#30363d"/>
+    <text x="235" y="299" fill="#c9d1d9">Khazar University</text>
+    <rect x="371" y="277" width="219" height="34" rx="17" fill="#132a24" stroke="#2ea043"/>
+    <circle cx="392" cy="294" r="5" fill="#3fb950"/>
+    <text x="405" y="299" fill="#aff5b4">Open to ML internships</text>
+  </g>
+</svg>
