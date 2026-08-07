@@ -295,7 +295,7 @@ GitHub analytics below describe **repository activity and repository-language co
 
 ---
 
-## Contribution Activity
+## Contribution Pulse
 
 <p align="center">
   <a href="https://github.com/ahmadabdullayew?tab=overview">
@@ -318,7 +318,7 @@ GitHub analytics below describe **repository activity and repository-language co
 </p>
 
 <p align="center">
-  <sub>Real GitHub contribution data · automatically refreshed</sub>
+  <sub>Animated view of real GitHub contribution data · automatically refreshed</sub>
 </p>
 
 ---
