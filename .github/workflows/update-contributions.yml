@@ -1,0 +1,69 @@
+name: Update contribution calendar
+
+on:
+  workflow_dispatch:
+
+  schedule:
+    - cron: "17 4 * * *"
+
+concurrency:
+  group: profile-contribution-calendar
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+
+jobs:
+  generate:
+
+    name: Generate animated contribution calendar
+
+    runs-on: ubuntu-latest
+
+    timeout-minutes: 10
+
+    permissions:
+      contents: write
+
+    steps:
+
+      - name: Check out profile repository
+
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+
+      - name: Generate contribution calendar SVGs
+
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PROFILE_USERNAME: ahmadabdullayew
+
+        run: |
+          python3 scripts/generate_contributions.py
+
+      - name: Commit changed contribution assets
+
+        shell: bash
+
+        run: |
+
+          if [[ -z "$(git status --porcelain -- profile/)" ]]; then
+
+            echo "Contribution calendar is already current."
+
+            exit 0
+
+          fi
+
+          git config user.name "github-actions[bot]"
+
+          git config user.email \
+            "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add \
+            profile/contributions-dark.svg \
+            profile/contributions-light.svg
+
+          git commit \
+            -m "chore(profile): refresh contribution calendar"
+
+          git push
