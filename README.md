@@ -347,3 +347,35 @@ current_focus:
     - AI engineering internships
     - research engineering collaboration
     - rigorous open-source work
+
+```
+
+---
+
+## Connect
+
+<p align="center">
+  <a href="mailto:ehmedmanafoghlu@gmail.com">
+    <img src="https://img.shields.io/badge/Email-8B5CF6?style=for-the-badge&logo=gmail&logoColor=white" alt="Email Ahmad Abdullayev" />
+  </a>
+  <a href="https://www.linkedin.com/in/ahmad-abdullayev-826816289/">
+    <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="Ahmad Abdullayev on LinkedIn" />
+  </a>
+  <a href="https://github.com/ahmadabdullayew">
+    <img src="https://img.shields.io/badge/GitHub-21262D?style=for-the-badge&logo=github&logoColor=C9D1D9" alt="Ahmad Abdullayev on GitHub" />
+  </a>
+</p>
+
+---
+
+<p align="center">
+  <strong>Engineering toward systems that are inspectable, testable, and useful under real constraints.</strong>
+</p>
+
+<p align="center">
+  <img
+    src="https://capsule-render.vercel.app/api?type=waving&color=6366F1&height=100&section=footer"
+    alt=""
+    width="100%"
+  />
+</p>
