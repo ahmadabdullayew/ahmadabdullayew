@@ -1,0 +1,85 @@
+name: Update profile analytics
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "23 3 * * *"
+
+concurrency:
+  group: profile-analytics
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+
+jobs:
+  generate:
+    name: Generate repository-owned analytics
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    permissions:
+      contents: write
+
+    steps:
+      - name: Check out profile repository
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: true
+
+      - name: Ensure profile asset directory exists
+        run: mkdir -p profile
+
+      - name: Generate dark GitHub stats
+        uses: stats-organization/github-readme-stats-action@abb8761d64babb580b336af88cccb2db39063440 # reviewed 2026-08-07
+        with:
+          card: stats
+          options: '{"username":"${{ github.repository_owner }}","show_icons":true,"hide_rank":true,"bg_color":"0D1117","title_color":"A78BFA","text_color":"C9D1D9","icon_color":"58A6FF","border_color":"30363D"}'
+          path: profile/stats-dark.svg
+          core_version: 2.1.3
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fail_on_error: true
+
+      - name: Generate light GitHub stats
+        uses: stats-organization/github-readme-stats-action@abb8761d64babb580b336af88cccb2db39063440 # reviewed 2026-08-07
+        with:
+          card: stats
+          options: '{"username":"${{ github.repository_owner }}","show_icons":true,"hide_rank":true,"bg_color":"FFFFFF","title_color":"6D28D9","text_color":"24292F","icon_color":"0969DA","border_color":"D0D7DE"}'
+          path: profile/stats-light.svg
+          core_version: 2.1.3
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fail_on_error: true
+
+      - name: Generate dark language composition
+        uses: stats-organization/github-readme-stats-action@abb8761d64babb580b336af88cccb2db39063440 # reviewed 2026-08-07
+        with:
+          card: top-langs
+          options: '{"username":"${{ github.repository_owner }}","layout":"compact","langs_count":6,"bg_color":"0D1117","title_color":"A78BFA","text_color":"C9D1D9","border_color":"30363D"}'
+          path: profile/top-langs-dark.svg
+          core_version: 2.1.3
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fail_on_error: true
+
+      - name: Generate light language composition
+        uses: stats-organization/github-readme-stats-action@abb8761d64babb580b336af88cccb2db39063440 # reviewed 2026-08-07
+        with:
+          card: top-langs
+          options: '{"username":"${{ github.repository_owner }}","layout":"compact","langs_count":6,"bg_color":"FFFFFF","title_color":"6D28D9","text_color":"24292F","border_color":"D0D7DE"}'
+          path: profile/top-langs-light.svg
+          core_version: 2.1.3
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fail_on_error: true
+
+      - name: Commit changed analytics
+        shell: bash
+        run: |
+          if [[ -z "$(git status --porcelain -- profile/)" ]]; then
+            echo "Profile analytics are already current."
+            exit 0
+          fi
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add profile/*.svg
+          git commit -m "chore(profile): refresh analytics"
+          git push
