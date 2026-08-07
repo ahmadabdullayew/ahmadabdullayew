@@ -1,6 +1,6 @@
 <p align="center">
   <img
-    src="https://capsule-render.vercel.app/api?type=waving&color=8B5CF6&height=105&section=header"
+    src="https://capsule-render.vercel.app/api?type=waving&color=8B5CF6&height=115&section=header"
     alt=""
     width="100%"
   />
@@ -9,18 +9,20 @@
 <h1 align="center">Ahmad Abdullayev</h1>
 
 <p align="center">
-  <strong>Machine Learning · Software Systems · Computer Engineering</strong>
+  <strong>Computer Engineering Student · Machine Learning Engineering · Software Systems</strong>
 </p>
 
 <p align="center">
   <img
-    src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=18&duration=2800&pause=900&color=A78BFA&center=true&vCenter=true&width=760&lines=Evaluating+ML+Beyond+Accuracy;Human-in-the-Loop+AI+Systems;Reliable+Python+Engineering;Learning-Augmented+Optimization"
-    alt="Evaluating machine learning beyond accuracy, human-in-the-loop AI systems, reliable Python engineering, and learning-augmented optimization"
+    src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=18&duration=2800&pause=900&color=A78BFA&center=true&vCenter=true&width=720&lines=Machine+Learning+Engineering;Evidence-Driven+Evaluation;Reliable+Python+Systems;Research-Oriented+Applied+ML"
+    alt="Machine learning engineering, evidence-driven evaluation, reliable Python systems, and research-oriented applied machine learning"
   />
 </p>
 
 <p align="center">
   <img src="https://img.shields.io/badge/Computer_Engineering-Khazar_University-21262D?style=flat-square&labelColor=161B22" alt="Computer Engineering at Khazar University" />
+  <img src="https://img.shields.io/badge/Location-Baku,_Azerbaijan-21262D?style=flat-square&labelColor=161B22" alt="Baku, Azerbaijan" />
+  <img src="https://img.shields.io/badge/Focus-ML_Engineering-21262D?style=flat-square&labelColor=161B22" alt="Machine Learning Engineering focus" />
   <img src="https://img.shields.io/badge/Open_to-ML_%26_AI_Internships-21262D?style=flat-square&labelColor=161B22" alt="Open to machine learning and AI internships" />
 </p>
 
@@ -34,89 +36,168 @@
   <a href="mailto:ehmedmanafoghlu@gmail.com">
     <img src="https://img.shields.io/badge/Email-8B5CF6?style=for-the-badge&logo=gmail&logoColor=white" alt="Email Ahmad Abdullayev" />
   </a>
+  <a href="https://github.com/ahmadabdullayew/personal-academic-website">
+    <img src="https://img.shields.io/badge/Academic_Site-6366F1?style=for-the-badge&logo=github&logoColor=white" alt="Personal academic website repository" />
+  </a>
 </p>
 
 ---
 
 ## About
 
-I am a **Computer Engineering student at Khazar University** focused on machine-learning systems, evaluation, and reliable software. I build applied ML workflows where model outputs remain inspectable through explicit validation, provenance, uncertainty handling, and human-review boundaries.
+I am a **Computer Engineering student at Khazar University** focused on building machine-learning systems that remain understandable, inspectable, and testable beyond the experimentation notebook.
 
-My current work spans **civic AI, Earth-observation intelligence, learning-augmented optimization, and evidence-governed software systems**. I am especially interested in the engineering layer between a trained model and a dependable system: data pipelines, APIs, persistence, evaluation methodology, observability, failure handling, and reproducibility.
+My work sits at the intersection of **machine learning, software engineering, model evaluation, and system design**. I am particularly interested in engineering workflows where model outputs are accompanied by explicit validation, provenance, uncertainty handling, human review, and reproducible evidence.
+
+I currently build and study systems involving:
+
+- applied machine-learning services;
+- reproducible model evaluation and acceptance gates;
+- human-in-the-loop AI workflows;
+- local-first and privacy-aware AI architectures;
+- research-oriented engineering prototypes;
+- optimization and learning-augmented algorithms;
+- reliable Python software boundaries and testing.
+
+My technical direction is deliberately broader than model training alone: I want to understand how intelligent components interact with **data, software architecture, evaluation methodology, users, operational constraints, and failure modes**.
+
+### Open to
+
+- Machine Learning Engineering internships
+- AI Engineering internships
+- Research Engineering opportunities
+- Applied ML collaborations
+- Rigorous open-source engineering
 
 ---
 
-## Technical Stack
+## Tech Stack
 
-**Core:** Python · C · SQL  
-**ML & Data:** PyTorch · scikit-learn · NumPy · pandas  
-**Systems & Backend:** FastAPI · Django · PostgreSQL · SQLite  
-**Engineering Tooling:** Linux · Git · Docker · GitHub Actions
+### Languages
 
-<p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=py,c,pytorch,sklearn,fastapi,django,postgres,sqlite,docker,linux,git,githubactions&theme=dark&perline=12">
-    <source media="(prefers-color-scheme: light)" srcset="https://skillicons.dev/icons?i=py,c,pytorch,sklearn,fastapi,django,postgres,sqlite,docker,linux,git,githubactions&theme=light&perline=12">
-    <img
-      src="https://skillicons.dev/icons?i=py,c,pytorch,sklearn,fastapi,django,postgres,sqlite,docker,linux,git,githubactions&theme=dark&perline=12"
-      alt="Python, C, PyTorch, scikit-learn, FastAPI, Django, PostgreSQL, SQLite, Docker, Linux, Git, and GitHub Actions"
-    />
-  </picture>
+<p>
+  <img
+    src="https://skillicons.dev/icons?i=py,c,ts,js&theme=dark"
+    alt="Python, C, TypeScript, and JavaScript"
+  />
+</p>
+
+### Frontend
+
+<p>
+  <img
+    src="https://skillicons.dev/icons?i=react,vite,html,css&theme=dark"
+    alt="React, Vite, HTML, and CSS"
+  />
+</p>
+
+### Backend & Databases
+
+<p>
+  <img
+    src="https://skillicons.dev/icons?i=fastapi,django,postgres,sqlite,mysql&theme=dark"
+    alt="FastAPI, Django, PostgreSQL, SQLite, and MySQL"
+  />
+</p>
+
+### Cloud, DevOps & Tooling
+
+<p>
+  <img
+    src="https://skillicons.dev/icons?i=git,githubactions,docker,linux,vscode&theme=dark"
+    alt="Git, GitHub Actions, Docker, Linux, and Visual Studio Code"
+  />
 </p>
 
 ---
 
-## Machine Learning & Evaluation
+## AI / ML Expertise
 
-| Area | Evidence |
-| --- | --- |
-| **Applied ML** | ASANAppeal routing and priority classification, structured intake, and provider-backed inference workflows |
-| **Evaluation & Calibration** | Gold regression datasets, task-level metrics, acceptance gates, threshold sweeps, and mismatch artifacts in ASANAppeal |
-| **Earth Observation ML** | Data ingestion, processing, analytics, datasets, model, evaluation, and inference boundaries in EO Drought Intelligence |
-| **Deep Learning** | PyTorch-oriented coursework and neural-network foundations |
-| **Learning-Augmented Optimization** | Neural Branch-and-Bound report with learned proposals constrained by deterministic acceptance and verification |
+<p>
+  <img src="https://img.shields.io/badge/PyTorch-161B22?style=flat-square&logo=pytorch&logoColor=EE4C2C" alt="PyTorch" />
+  <img src="https://img.shields.io/badge/scikit--learn-161B22?style=flat-square&logo=scikitlearn&logoColor=F7931E" alt="scikit-learn" />
+  <img src="https://img.shields.io/badge/NumPy-161B22?style=flat-square&logo=numpy&logoColor=4D77CF" alt="NumPy" />
+  <img src="https://img.shields.io/badge/pandas-161B22?style=flat-square&logo=pandas&logoColor=C9D1D9" alt="pandas" />
+</p>
 
----
+| Domain | Evidence / Level | Technologies & Methods | Representative Work |
+| --- | --- | --- | --- |
+| **Classical Machine Learning** | Applied / project experience | Classification, feature engineering, structured inference, scikit-learn-style workflows | [ASANAppeal AI](https://github.com/ahmadabdullayew/Asan-Appeal) |
+| **Model Evaluation & Verification** | Project experience | Acceptance gates, calibration sweeps, regression datasets, mismatch analysis, human-review fallback | [ASANAppeal AI](https://github.com/ahmadabdullayew/Asan-Appeal) |
+| **Earth Observation ML** | Project experience | EO/environmental data, preprocessing, feature engineering, temporal analysis, drought intelligence | [EO Drought Intelligence](https://github.com/ahmadabdullayew/EO-Drought-Intelligence) |
+| **Deep Learning** | Foundational / coursework | Neural-network foundations, PyTorch-oriented learning | [Machine Learning Coursework](https://github.com/ahmadabdullayew/holbertonschool-machine_learning) |
+| **Learning-Augmented Optimization** | Research / technical-report exposure | Branch-and-bound, column generation, cutting planes, deterministic acceptance gates | [Neural Branch-and-Bound](https://github.com/ahmadabdullayew/DBMS-Report) |
 
-## Flagship System
-
-### [ASANAppeal AI](https://github.com/ahmadabdullayew/Asan-Appeal)
-
-`SYSTEM` `AI/ML` `PYTHON` `HUMAN-IN-THE-LOOP`
-
-A runnable backend foundation for civic complaint workflows covering **intake, institutional routing, priority scoring, appeal drafting, response verification, explanation, and human-review fallback**.
-
-**Architecture:** `FastAPI → service boundaries → provider abstraction → SQLite persistence → review / audit / evaluation`
-
-**Engineering evidence**
-
-- Explicit services separate intake, routing, priority, drafting, verification, explanation, and review responsibilities.
-- Local zero-key execution is supported alongside optional Ollama, Gemini, and OpenAI provider paths.
-- Role-aware workflows, case lifecycle rules, privacy controls, abuse protection, observability, and append-only hash-linked audit records make system boundaries inspectable.
-- Built-in evaluation covers regression datasets, task metrics, acceptance gates, confidence-threshold calibration, and mismatch analysis.
-
-**Artifact:** Runnable backend foundation  
-**Maturity:** Runnable local backend foundation
-
-**Inspect:** [Repository](https://github.com/ahmadabdullayew/Asan-Appeal) · [Evaluation](https://github.com/ahmadabdullayew/Asan-Appeal#evaluation-and-acceptance-gates) · [Audit ledger](https://github.com/ahmadabdullayew/Asan-Appeal#audit-ledger) · [Privacy controls](https://github.com/ahmadabdullayew/Asan-Appeal#privacy-controls)
+The emphasis is on **evidence-backed engineering depth rather than self-assigned proficiency percentages**.
 
 ---
 
-## Selected Systems & Research
+## Featured Projects
 
-<details>
-<summary><strong>EO Drought Intelligence</strong> — Earth-observation drought analysis prototype</summary>
+<details open>
+<summary><strong>ASANAppeal AI</strong> — Reviewable civic-AI workflow with local-first execution</summary>
 
 <br>
 
-`PROTOTYPE` `EARTH OBSERVATION` `ML PIPELINES`
+A runnable backend foundation for converting citizen complaints and supporting evidence into a structured workflow covering intake, institutional routing, priority assessment, appeal drafting, response verification, explanation, and human review.
 
-A hackathon prototype that organizes Earth-observation and environmental signals into a layered pipeline for drought analysis, temporal stress indicators, and irrigation-priority outputs.
+| Dimension | Details |
+| --- | --- |
+| **Stack** | Python · FastAPI · SQLite |
+| **Architecture** | Intake → Routing → Priority → Drafting → Verification → Explanation → Human Review |
+| **Execution Model** | Local zero-key mode with optional Ollama, Gemini, and OpenAI provider paths |
+| **Validation** | Gold regression datasets, task-level metrics, acceptance gates, threshold-calibration sweeps, mismatch artifacts |
+| **Reliability / Security** | Role-based authorization, append-only hash-linked audit records, privacy controls, abuse protection, structured observability |
+| **Repository** | [github.com/ahmadabdullayew/Asan-Appeal](https://github.com/ahmadabdullayew/Asan-Appeal) |
+| **Maturity** | Runnable backend foundation; not presented as an externally validated production deployment |
 
-**Stack:** Python · EO/environmental data · ML pipelines  
-**Architecture:** `ingest → process → analyze → model → evaluate → infer`  
-**Maturity:** Hackathon prototype with a layered, production-minded architecture  
-**Inspect:** [Repository](https://github.com/ahmadabdullayew/EO-Drought-Intelligence) · [Project architecture](https://github.com/ahmadabdullayew/EO-Drought-Intelligence#project-architecture)
+### Engineering design
+
+The system decomposes the AI workflow into explicit services rather than treating a single model call as the application architecture.
+
+Uncertain or operationally sensitive decisions can be routed toward **manual review**, while model/provider provenance is retained at the case level.
+
+The repository also includes a built-in evaluation path for intake, routing, priority, and verification. Evaluation outputs include task metrics, acceptance decisions, calibration sweeps, and mismatch samples intended to make regressions inspectable.
+
+The local execution path combines durable SQLite persistence, locally backed classification/reasoning components, evidence handling, lifecycle enforcement, and review workflows without requiring a hosted-model API key.
+
+</details>
+
+<details>
+<summary><strong>EO Drought Intelligence</strong> — Earth-observation drought and irrigation decision support</summary>
+
+<br>
+
+A hackathon prototype designed to transform Earth-observation and environmental signals into drought analysis, temporal stress indicators, and irrigation-priority information.
+
+| Dimension | Details |
+| --- | --- |
+| **Stack** | Python · Earth Observation data · Environmental data · ML pipelines |
+| **Architecture** | Ingestion → Processing → Analytics → ML → Pipelines → Interfaces |
+| **Technical Focus** | Vegetation/moisture indicators, temporal analysis, feature engineering, drought scoring |
+| **Repository** | [github.com/ahmadabdullayew/EO-Drought-Intelligence](https://github.com/ahmadabdullayew/EO-Drought-Intelligence) |
+| **Maturity** | Hackathon prototype with a layered, production-minded architecture |
+
+### Engineering design
+
+The project avoids a notebook-only structure by separating domain concepts and processing stages into explicit modules for:
+
+- configuration;
+- domain models;
+- data ingestion;
+- preprocessing;
+- feature engineering;
+- analytics;
+- datasets;
+- models;
+- training;
+- evaluation;
+- inference;
+- model metadata;
+- end-to-end pipelines;
+- command-line interfaces.
+
+The goal is to preserve a clear transition from raw environmental signals to interpretable decision-support outputs while keeping experimentation, evaluation, and inference structurally separated.
 
 </details>
 
@@ -125,32 +206,106 @@ A hackathon prototype that organizes Earth-observation and environmental signals
 
 <br>
 
-`TECHNICAL REPORT` `OPTIMIZATION` `DATABASE SYSTEMS`
+A formal technical report exploring how learned proposals can accelerate an exact database physical-design optimizer without allowing machine-learning components to invalidate solver correctness.
 
-A formal technical report on jointly selecting indexes, materialized views, and partition schemes under explicit constraints using branch-and-bound, column generation, and cutting planes.
+| Dimension | Details |
+| --- | --- |
+| **Artifact** | Formal technical report |
+| **Problem** | Joint index, materialized-view, and partition selection under budget and compatibility constraints |
+| **Optimization Methods** | Mixed-integer optimization · Branch-and-bound · Column generation · Cutting planes |
+| **Learning Role** | Advisory proposals for branching, cuts, pricing, and primal construction |
+| **Correctness Boundary** | Deterministic acceptance gates and certificate verification remain authoritative |
+| **Repository** | [github.com/ahmadabdullayew/DBMS-Report](https://github.com/ahmadabdullayew/DBMS-Report) |
 
-Learned components remain **advisory**: branching, cut, pricing, and primal proposals pass through deterministic acceptance and certificate-verification boundaries so that learning does not become the authority for exactness.
+### Engineering design
 
-**Artifact:** Formal technical report  
-**Inspect:** [Repository](https://github.com/ahmadabdullayew/DBMS-Report) · [Report](https://github.com/ahmadabdullayew/DBMS-Report/blob/main/docs/DBMS.pdf)
+The central design principle is that learned components can improve **proposal quality** without becoming correctness-critical authorities.
+
+Operations affecting bounds or pruning remain subject to deterministic verification. This preserves the semantic distinction between:
+
+> learning that guides search
+
+and
+
+> mechanisms that establish exactness.
+
+The report also defines an empirical closure framework covering benchmark design, fairness, metrics, ablation, robustness, and repeatability.
 
 </details>
 
 <details>
-<summary><strong>Personal Academic Website</strong> — Evidence-governed software platform foundation</summary>
+<summary><strong>Personal Academic Website</strong> — Evidence-governed academic and professional web platform</summary>
 
 <br>
 
-`PLATFORM FOUNDATION` `DJANGO` `SYSTEM DESIGN`
+An implementation foundation for a personal academic website designed around explicit content provenance, quality gates, traceability, and controlled publication of personal or academic claims.
 
-A Django-based implementation foundation that treats content provenance, requirements, architecture decisions, and release checks as inspectable engineering artifacts.
+| Dimension | Details |
+| --- | --- |
+| **Stack** | Django · TypeScript · Vite · PostgreSQL |
+| **Architecture** | Server-rendered Django frontend · REST API · PostgreSQL persistence · asynchronous-worker design |
+| **Engineering Controls** | Formatting · linting · strict typing · tests · migration checks · OpenAPI validation · build checks |
+| **Infrastructure Design** | AWS-oriented deployment architecture using CloudFront, WAF, ALB, ECS, RDS, S3, and SQS |
+| **Security / Integrity** | Secret-management boundaries, controlled publication states, isolated storage boundaries, governance records |
+| **Repository** | [github.com/ahmadabdullayew/personal-academic-website](https://github.com/ahmadabdullayew/personal-academic-website) |
+| **Maturity** | Implementation foundation with documented production architecture; deployment design is not treated as proof of production operation |
 
-**Stack:** Django · TypeScript · PostgreSQL  
-**Engineering controls:** formatting · linting · strict typing · tests · migration checks · OpenAPI validation · build checks  
-**Maturity:** Implementation foundation with documented deployment architecture  
-**Inspect:** [Repository](https://github.com/ahmadabdullayew/personal-academic-website) · [Architecture](https://github.com/ahmadabdullayew/personal-academic-website#architecture) · [Command contract](https://github.com/ahmadabdullayew/personal-academic-website#command-contract)
+### Engineering design
+
+The repository treats content claims, architecture decisions, requirements, and release checks as inspectable engineering artifacts.
+
+Its local development contract includes reproducible Python and Node environments together with formatting, linting, typing, testing, migration, OpenAPI, build, and cross-artifact validation commands.
+
+The architecture deliberately separates the implemented foundation from the documented production deployment target, avoiding the assumption that an architecture diagram itself proves deployment or operational maturity.
 
 </details>
+
+---
+
+## GitHub Analytics
+
+GitHub analytics below describe **repository activity and repository-language composition**. They are not proficiency, seniority, or engineering-quality scores.
+
+<p align="center">
+  <a href="https://github.com/ahmadabdullayew">
+    <img
+      src="https://github-stats-extended.vercel.app/api?username=ahmadabdullayew&show_icons=true&bg_color=0D1117&title_color=A78BFA&text_color=C9D1D9&icon_color=58A6FF&border_color=30363D"
+      alt="GitHub contribution statistics for Ahmad Abdullayev"
+    />
+  </a>
+</p>
+
+<p align="center">
+  <a href="https://github.com/ahmadabdullayew?tab=repositories">
+    <img
+      src="https://github-stats-extended.vercel.app/api/top-langs/?username=ahmadabdullayew&layout=compact&langs_count=8&bg_color=0D1117&title_color=A78BFA&text_color=C9D1D9&border_color=30363D"
+      alt="Repository language composition for Ahmad Abdullayev"
+    />
+  </a>
+</p>
+
+<p align="center">
+  <a href="https://github.com/ahmadabdullayew">
+    <img
+      src="https://streak-stats.demolab.com?user=ahmadabdullayew&background=0D1117&border=30363D&stroke=30363D&ring=8B5CF6&fire=A78BFA&currStreakNum=C9D1D9&sideNums=C9D1D9&currStreakLabel=A78BFA&sideLabels=8B949E&dates=8B949E"
+      alt="GitHub contribution streak statistics for Ahmad Abdullayev"
+    />
+  </a>
+</p>
+
+---
+
+## Contribution Activity
+
+<p align="center">
+  <a href="https://github.com/ahmadabdullayew">
+    <img
+      src="https://github-readme-activity-graph.vercel.app/graph?username=ahmadabdullayew&bg_color=0D1117&color=C9D1D9&line=8B5CF6&point=58A6FF&area=true&border_color=30363D&custom_title=Contribution%20Activity"
+      alt="Recent GitHub contribution activity graph for Ahmad Abdullayev"
+      width="100%"
+    />
+  </a>
+</p>
 
 ---
 
@@ -164,9 +319,9 @@ current_focus:
     - optimization and algorithms
 
   building:
-    - evaluated ML systems
+    - reproducible machine-learning evaluation
     - human-in-the-loop AI workflows
-    - reliable Python services
+    - production-minded Python systems
 
   exploring:
     - AI in medicine
@@ -177,53 +332,4 @@ current_focus:
     - machine learning engineering internships
     - AI engineering internships
     - research engineering collaboration
-```
-
----
-
-<details>
-<summary><strong>GitHub Activity</strong> — repository statistics and language composition</summary>
-
-<br>
-
-The cards below are generated by GitHub Actions and stored in this profile repository.
-
-<p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="./profile/stats-dark.svg">
-    <source media="(prefers-color-scheme: light)" srcset="./profile/stats-light.svg">
-    <img src="./profile/stats-dark.svg" alt="GitHub repository and contribution statistics for Ahmad Abdullayev" width="100%" />
-  </picture>
-</p>
-
-<p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="./profile/top-langs-dark.svg">
-    <source media="(prefers-color-scheme: light)" srcset="./profile/top-langs-light.svg">
-    <img src="./profile/top-langs-dark.svg" alt="Repository language composition for Ahmad Abdullayev" width="100%" />
-  </picture>
-</p>
-
-</details>
-
----
-
-## Connect
-
-<p align="center">
-  <a href="mailto:ehmedmanafoghlu@gmail.com">
-    <img src="https://img.shields.io/badge/Email-8B5CF6?style=for-the-badge&logo=gmail&logoColor=white" alt="Email Ahmad Abdullayev" />
-  </a>
-  <a href="https://www.linkedin.com/in/ahmad-abdullayev-826816289/">
-    <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="Ahmad Abdullayev on LinkedIn" />
-  </a>
-  <a href="https://github.com/ahmadabdullayew">
-    <img src="https://img.shields.io/badge/GitHub-21262D?style=for-the-badge&logo=github&logoColor=C9D1D9" alt="Ahmad Abdullayev on GitHub" />
-  </a>
-</p>
-
----
-
-<p align="center">
-  <strong>From models to measurable, reviewable systems.</strong>
-</p>
+    - rigorous open-source work
