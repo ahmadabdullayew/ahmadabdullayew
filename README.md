@@ -323,8 +323,6 @@ GitHub analytics below describe **repository activity and repository-language co
 
 ---
 
----
-
 ## Current Focus
 
 ```yaml
