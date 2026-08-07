@@ -298,14 +298,30 @@ GitHub analytics below describe **repository activity and repository-language co
 ## Contribution Activity
 
 <p align="center">
-  <a href="https://github.com/ahmadabdullayew">
-    <img
-      src="https://github-readme-activity-graph.vercel.app/graph?username=ahmadabdullayew&bg_color=0D1117&color=C9D1D9&line=8B5CF6&point=58A6FF&area=true&border_color=30363D&custom_title=Contribution%20Activity"
-      alt="Recent GitHub contribution activity graph for Ahmad Abdullayev"
-      width="100%"
-    />
+  <a href="https://github.com/ahmadabdullayew?tab=overview">
+    <picture>
+      <source
+        media="(prefers-color-scheme: dark)"
+        srcset="./profile/contributions-dark.svg"
+      />
+      <source
+        media="(prefers-color-scheme: light)"
+        srcset="./profile/contributions-light.svg"
+      />
+      <img
+        src="./profile/contributions-dark.svg"
+        alt="Animated GitHub contribution calendar for Ahmad Abdullayev"
+        width="100%"
+      />
+    </picture>
   </a>
 </p>
+
+<p align="center">
+  <sub>Real GitHub contribution data · automatically refreshed</sub>
+</p>
+
+---
 
 ---
 
