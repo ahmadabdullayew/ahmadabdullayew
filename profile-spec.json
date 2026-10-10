@@ -46,6 +46,54 @@
       "owner": "scripts/generate_contributions.py",
       "publishing_workflow": ".github/workflows/update-contributions.yml",
       "readme_required": true
+    },
+    {
+      "path": "assets/identity-dark.svg",
+      "kind": "maintained",
+      "owner": "PROFILE_VISUAL_DESIGN.md",
+      "readme_required": true
+    },
+    {
+      "path": "assets/identity-light.svg",
+      "kind": "maintained",
+      "owner": "PROFILE_VISUAL_DESIGN.md",
+      "readme_required": true
+    },
+    {
+      "path": "assets/identity-mobile-dark.svg",
+      "kind": "maintained",
+      "owner": "PROFILE_VISUAL_DESIGN.md",
+      "readme_required": true
+    },
+    {
+      "path": "assets/identity-mobile-light.svg",
+      "kind": "maintained",
+      "owner": "PROFILE_VISUAL_DESIGN.md",
+      "readme_required": true
+    },
+    {
+      "path": "assets/method-dark.svg",
+      "kind": "maintained",
+      "owner": "PROFILE_VISUAL_DESIGN.md",
+      "readme_required": true
+    },
+    {
+      "path": "assets/method-light.svg",
+      "kind": "maintained",
+      "owner": "PROFILE_VISUAL_DESIGN.md",
+      "readme_required": true
+    },
+    {
+      "path": "assets/method-mobile-dark.svg",
+      "kind": "maintained",
+      "owner": "PROFILE_VISUAL_DESIGN.md",
+      "readme_required": true
+    },
+    {
+      "path": "assets/method-mobile-light.svg",
+      "kind": "maintained",
+      "owner": "PROFILE_VISUAL_DESIGN.md",
+      "readme_required": true
     }
   ],
   "featured_projects": [
@@ -89,6 +137,6 @@
     ],
     "image_alternative_text": "Informative and functional images require descriptive alt; decorative HTML images require alt=\"\", role=\"presentation\" and aria-hidden=\"true\" and cannot be linked; theme-variant source elements inherit the img fallback alternative.",
     "local_links": "Local link destinations must resolve inside repository; README and Markdown fragment anchors must exist.",
-    "visual_policy": "Text-first profile; ordinary h3 featured-project headings; no SMIL/CSS motion; static desktop/mobile activity visuals with accessible Markdown equivalent."
+    "visual_policy": "Text-first semantics and immediate evidence links; static repository-owned visual identity and working-method SVGs, plus a separate generated contribution visualization. Theme and mobile variants with accessible text alternatives. No animation or third-party embeds."
   }
 }

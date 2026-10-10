@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Render-verify all four static SVGs at representative display sizes.
+"""Render-verify all registered static SVGs at representative display sizes.
 
 CI smoke verification checks decoding, visible pixels, geometry and text masks.
 It is not a substitute for GitHub's actual layout or assistive technology tests.
@@ -23,6 +23,14 @@ MEDIA = {
     "mobile-dark": ("profile/contributions-mobile-dark.svg", [320, 390]),
     "desktop-light": ("profile/contributions-light.svg", [768, 1024, 1440]),
     "desktop-dark": ("profile/contributions-dark.svg", [768, 1024, 1440]),
+    "identity-mobile-light": ("assets/identity-mobile-light.svg", [320, 390]),
+    "identity-mobile-dark": ("assets/identity-mobile-dark.svg", [320, 390]),
+    "identity-light": ("assets/identity-light.svg", [768, 1024, 1440]),
+    "identity-dark": ("assets/identity-dark.svg", [768, 1024, 1440]),
+    "method-mobile-light": ("assets/method-mobile-light.svg", [320, 390]),
+    "method-mobile-dark": ("assets/method-mobile-dark.svg", [320, 390]),
+    "method-light": ("assets/method-light.svg", [768, 1024, 1440]),
+    "method-dark": ("assets/method-dark.svg", [768, 1024, 1440]),
 }
 
 
@@ -37,7 +45,8 @@ def check_one(path: Path, widths: list[int], output: Path | None = None) -> None
         png = cairosvg.svg2png(bytestring=raw.encode("utf-8"), output_width=width)
         with Image.open(BytesIO(png)) as img:
             img.load()
-            if img.width != width or img.height < 180:
+            expected_height = round(width * float(xml.get('height', '1')) / float(xml.get('width', '1')))
+            if img.width != width or abs(img.height - expected_height) > 2 or img.height < 70:
                 raise ValueError(f"Unexpected SVG raster dimensions in {path}: {img.size}")
             rgb = img.convert("RGB")
             if len(rgb.getcolors(maxcolors=1_000_000) or []) < 3:
