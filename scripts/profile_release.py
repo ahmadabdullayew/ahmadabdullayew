@@ -298,12 +298,12 @@ def check_public(username:str, sha_commit:str,*,opener=None, attempts:int=3, req
     urls=[f'https://raw.githubusercontent.com/{username}/{username}/{sha_commit}/{path}'
           for path in ('README.md',*OWNED)]
     page=f'https://github.com/{username}'
-    head_url=f'https://api.github.com/repos/{username}/{username}/commits/main'
+    head_url=f'https://api.github.com/repos/{username}/{username}/git/ref/heads/main'
     for attempt in range(attempts):
         try:
             with opener(urllib.request.Request(head_url,headers={'User-Agent':'profile-release-verifier','Accept':'application/vnd.github+json'}),timeout=15) as response:
                 live_head=json.loads(response.read(250_000))
-            if live_head.get('sha')!=sha_commit:
+            if live_head.get('object', {}).get('sha') != sha_commit:
                 raise ReleaseError('published main branch tip does not equal requested commit SHA')
             remote_files={}
             for path,url in zip(('README.md',*OWNED),urls):
