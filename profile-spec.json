@@ -1,0 +1,94 @@
+{
+  "schema_version": 1,
+  "profile_owner": "ahmadabdullayew",
+  "readme_path": "README.md",
+  "section_headings": [
+    "About",
+    "Featured Projects",
+    "ML Experience and Research",
+    "Technical Foundation",
+    "GitHub Activity",
+    "Current Focus",
+    "Connect"
+  ],
+  "publication": {
+    "architecture": "repository-owned-contribution-calendar-only",
+    "external_images_allowed": false,
+    "external_image_hosts_allowlist": [],
+    "obsolete_analytics_workflow": ".github/workflows/update-profile-stats.yml",
+    "accessible_summary": "profile/contributions-summary.md"
+  },
+  "assets": [
+    {
+      "path": "profile/contributions-dark.svg",
+      "kind": "generated",
+      "owner": "scripts/generate_contributions.py",
+      "publishing_workflow": ".github/workflows/update-contributions.yml",
+      "readme_required": true
+    },
+    {
+      "path": "profile/contributions-light.svg",
+      "kind": "generated",
+      "owner": "scripts/generate_contributions.py",
+      "publishing_workflow": ".github/workflows/update-contributions.yml",
+      "readme_required": true
+    },
+    {
+      "path": "profile/contributions-mobile-dark.svg",
+      "kind": "generated",
+      "owner": "scripts/generate_contributions.py",
+      "publishing_workflow": ".github/workflows/update-contributions.yml",
+      "readme_required": true
+    },
+    {
+      "path": "profile/contributions-mobile-light.svg",
+      "kind": "generated",
+      "owner": "scripts/generate_contributions.py",
+      "publishing_workflow": ".github/workflows/update-contributions.yml",
+      "readme_required": true
+    }
+  ],
+  "featured_projects": [
+    {
+      "name": "ASANAppeal AI",
+      "url": "https://github.com/ahmadabdullayew/Asan-Appeal"
+    },
+    {
+      "name": "Bahar Operations",
+      "url": "https://github.com/ahmadabdullayew/Bahar"
+    },
+    {
+      "name": "EO Drought Intelligence",
+      "url": "https://github.com/ahmadabdullayew/EO-Drought-Intelligence"
+    },
+    {
+      "name": "Neural Branch-and-Bound Accelerator",
+      "url": "https://github.com/ahmadabdullayew/DBMS-Report"
+    }
+  ],
+  "component_policy": {
+    "allowed": [
+      "Markdown headings, prose, links, tables, lists, fenced code",
+      "Repository-local SVG files in the asset registry"
+    ],
+    "disallowed": [
+      "Externally served README images, including badges, statistics and animations",
+      "Undeclared local image files",
+      "Duplicate remote and locally generated activity analytics"
+    ],
+    "allowed_html_tags": [
+      "a",
+      "br",
+      "h1",
+      "img",
+      "p",
+      "picture",
+      "source",
+      "strong",
+      "sub"
+    ],
+    "image_alternative_text": "Informative and functional images require descriptive alt; decorative HTML images require alt=\"\", role=\"presentation\" and aria-hidden=\"true\" and cannot be linked; theme-variant source elements inherit the img fallback alternative.",
+    "local_links": "Local link destinations must resolve inside repository; README and Markdown fragment anchors must exist.",
+    "visual_policy": "Text-first profile; ordinary h3 featured-project headings; no SMIL/CSS motion; static desktop/mobile activity visuals with accessible Markdown equivalent."
+  }
+}

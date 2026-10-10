@@ -1,0 +1,461 @@
+[
+  {
+    "name": "heading_renamed",
+    "operation": "replace",
+    "target": "README.md",
+    "before": "## About",
+    "after": "## Wrong About",
+    "expected": "section order",
+    "valid": false
+  },
+  {
+    "name": "heading_only_in_fenced_code",
+    "operation": "replace",
+    "target": "README.md",
+    "before": "## About",
+    "after": "```markdown\n## About\n```",
+    "expected": "section order",
+    "valid": false
+  },
+  {
+    "name": "duplicated_heading",
+    "operation": "append",
+    "target": "README.md",
+    "before": "",
+    "after": "\n## About\n",
+    "expected": "section order",
+    "valid": false
+  },
+  {
+    "name": "broken_html_img_src_before_alt",
+    "operation": "replace",
+    "target": "README.md",
+    "before": "src=\"./profile/contributions-light.svg\"",
+    "after": "src=\"./profile/no-file.svg\"",
+    "expected": "broken local image",
+    "valid": false
+  },
+  {
+    "name": "broken_html_img_alt_before_src",
+    "operation": "replace",
+    "target": "README.md",
+    "before": "<img src=\"./profile/contributions-light.svg\" alt=",
+    "after": "<img alt=\"Human readable profile\" src=\"./assets/no-file.svg\" data-caption=",
+    "expected": "broken local image",
+    "valid": false
+  },
+  {
+    "name": "broken_markdown_image",
+    "operation": "append",
+    "target": "README.md",
+    "before": "",
+    "after": "\n![Illustration](./assets/not-here.svg)\n",
+    "expected": "broken local image",
+    "valid": false
+  },
+  {
+    "name": "broken_reference_markdown_image",
+    "operation": "append",
+    "target": "README.md",
+    "before": "",
+    "after": "\n![Diagram][missing-diagram]\n\n[missing-diagram]: ./assets/not-here.svg\n",
+    "expected": "broken local image",
+    "valid": false
+  },
+  {
+    "name": "broken_html_source",
+    "operation": "replace",
+    "target": "README.md",
+    "before": "srcset=\"./profile/contributions-dark.svg\"",
+    "after": "srcset=\"./profile/absent.svg\"",
+    "expected": "broken local image",
+    "valid": false
+  },
+  {
+    "name": "broken_srcset_second_candidate",
+    "operation": "replace",
+    "target": "README.md",
+    "before": "srcset=\"./profile/contributions-dark.svg\"",
+    "after": "srcset=\"./profile/contributions-dark.svg 1x, ./profile/absent.svg 2x\"",
+    "expected": "broken local image",
+    "valid": false
+  },
+  {
+    "name": "invalid_srcset_descriptor",
+    "operation": "replace",
+    "target": "README.md",
+    "before": "srcset=\"./profile/contributions-dark.svg\"",
+    "after": "srcset=\"./profile/contributions-dark.svg 2q\"",
+    "expected": "invalid srcset descriptor",
+    "valid": false
+  },
+  {
+    "name": "missing_alt",
+    "operation": "replace",
+    "target": "README.md",
+    "before": "alt=\"Static GitHub activity chart. See the adjacent accessible activity summary for numerical counts and reporting dates.\"",
+    "after": "",
+    "expected": "HTML <img> is missing alt",
+    "valid": false
+  },
+  {
+    "name": "blank_informative_alt",
+    "operation": "replace",
+    "target": "README.md",
+    "before": "alt=\"Static GitHub activity chart. See the adjacent accessible activity summary for numerical counts and reporting dates.\"",
+    "after": "alt=\"\"",
+    "expected": "image lacks meaningful alternative text",
+    "valid": false
+  },
+  {
+    "name": "generic_alt",
+    "operation": "replace",
+    "target": "README.md",
+    "before": "alt=\"Static GitHub activity chart. See the adjacent accessible activity summary for numerical counts and reporting dates.\"",
+    "after": "alt=\"image\"",
+    "expected": "image lacks meaningful alternative text",
+    "valid": false
+  },
+  {
+    "name": "decorative_unlinked_is_legal",
+    "operation": "append",
+    "target": "README.md",
+    "before": "",
+    "after": "\n<img src=\"./profile/contributions-light.svg\" alt=\"\" role=\"presentation\" aria-hidden=\"true\">\n",
+    "expected": "",
+    "valid": true
+  },
+  {
+    "name": "decorative_linked_is_illegal",
+    "operation": "append",
+    "target": "README.md",
+    "before": "",
+    "after": "\n<a href=\"https://example.org\"><img src=\"./profile/contributions-light.svg\" alt=\"\" role=\"presentation\" aria-hidden=\"true\"></a>\n",
+    "expected": "linked functional image cannot be decorative",
+    "valid": false
+  },
+  {
+    "name": "unsupported_script",
+    "operation": "append",
+    "target": "README.md",
+    "before": "",
+    "after": "\n<script>alert(1)</script>\n",
+    "expected": "unsupported HTML component",
+    "valid": false
+  },
+  {
+    "name": "unsupported_iframe",
+    "operation": "append",
+    "target": "README.md",
+    "before": "",
+    "after": "\n<iframe src=\"https://example.com\"></iframe>\n",
+    "expected": "unsupported HTML component",
+    "valid": false
+  },
+  {
+    "name": "unsupported_component_mentioned_in_fence_is_legal",
+    "operation": "append",
+    "target": "README.md",
+    "before": "",
+    "after": "\n```html\n<script>alert(1)</script>\n<img src=\"https://example.com/photo.png\">\n```\n",
+    "expected": "",
+    "valid": true
+  },
+  {
+    "name": "unsupported_component_in_html_comment_is_legal",
+    "operation": "append",
+    "target": "README.md",
+    "before": "",
+    "after": "\n<!-- <img src=\"https://example.com/remote.svg\"><script>do_not_run()</script> -->\n",
+    "expected": "",
+    "valid": true
+  },
+  {
+    "name": "inline_code_mention_is_legal",
+    "operation": "append",
+    "target": "README.md",
+    "before": "",
+    "after": "\n`<script>` and `![image](https://example.com/remote.svg)` are examples only.\n",
+    "expected": "",
+    "valid": true
+  },
+  {
+    "name": "forbidden_external_markdown_image",
+    "operation": "append",
+    "target": "README.md",
+    "before": "",
+    "after": "\n![External image](https://example.org/image.png)\n",
+    "expected": "external/embedded image is prohibited",
+    "valid": false
+  },
+  {
+    "name": "forbidden_external_html_image",
+    "operation": "replace",
+    "target": "README.md",
+    "before": "src=\"./profile/contributions-light.svg\"",
+    "after": "src=\"https://example.org/banner.svg\"",
+    "expected": "external/embedded image is prohibited",
+    "valid": false
+  },
+  {
+    "name": "forbidden_external_source",
+    "operation": "replace",
+    "target": "README.md",
+    "before": "srcset=\"./profile/contributions-dark.svg\"",
+    "after": "srcset=\"https://example.org/contributions.svg\"",
+    "expected": "external/embedded image is prohibited",
+    "valid": false
+  },
+  {
+    "name": "unregistered_local_image",
+    "operation": "append",
+    "target": "README.md",
+    "before": "",
+    "after": "\n![Extra image](./profile/unregistered.svg)\n",
+    "expected": "unregistered image",
+    "valid": false
+  },
+  {
+    "name": "unsafe_inline_html_event",
+    "operation": "append",
+    "target": "README.md",
+    "before": "",
+    "after": "\n<a href=\"https://example.com\" onclick=\"evil()\">Click</a>\n",
+    "expected": "unsafe HTML event attribute",
+    "valid": false
+  },
+  {
+    "name": "unsafe_html_href",
+    "operation": "append",
+    "target": "README.md",
+    "before": "",
+    "after": "\n<a href=\"javascript:alert(1)\">Bad</a>\n",
+    "expected": "unsupported/unsafe link scheme",
+    "valid": false
+  },
+  {
+    "name": "broken_internal_link",
+    "operation": "append",
+    "target": "README.md",
+    "before": "",
+    "after": "\n[Missing file](./missing-local.md)\n",
+    "expected": "broken local link target",
+    "valid": false
+  },
+  {
+    "name": "broken_same_doc_fragment",
+    "operation": "append",
+    "target": "README.md",
+    "before": "",
+    "after": "\n[Missing heading](#heading-that-does-not-exist)\n",
+    "expected": "broken README fragment link",
+    "valid": false
+  },
+  {
+    "name": "valid_same_doc_fragment",
+    "operation": "append",
+    "target": "README.md",
+    "before": "",
+    "after": "\n[About section](#about)\n",
+    "expected": "",
+    "valid": true
+  },
+  {
+    "name": "valid_local_document_link",
+    "operation": "append",
+    "target": "README.md",
+    "before": "",
+    "after": "\n[Architecture spec](./PROFILE_ARCHITECTURE.md)\n",
+    "expected": "",
+    "valid": true
+  },
+  {
+    "name": "bad_markdown_file_fragment",
+    "operation": "append",
+    "target": "README.md",
+    "before": "",
+    "after": "\n[Missing anchor](./PROFILE_ARCHITECTURE.md#not-a-real-heading)\n",
+    "expected": "broken Markdown fragment link",
+    "valid": false
+  },
+  {
+    "name": "unsafe_path_traversal",
+    "operation": "append",
+    "target": "README.md",
+    "before": "",
+    "after": "\n[Outside](../outside.md)\n",
+    "expected": "unsafe local link URL",
+    "valid": false
+  },
+  {
+    "name": "missing_picture_fallback",
+    "operation": "replace",
+    "target": "README.md",
+    "before": "<img src=\"./profile/contributions-light.svg\" alt=\"Static GitHub activity chart. See the adjacent accessible activity summary for numerical counts and reporting dates.\" width=\"100%\" />",
+    "after": "",
+    "expected": "picture",
+    "valid": false
+  },
+  {
+    "name": "invalid_svg_xml",
+    "operation": "replace",
+    "target": "profile/contributions-dark.svg",
+    "before": "</svg>",
+    "after": "</not-svg>",
+    "expected": "invalid SVG XML",
+    "valid": false
+  },
+  {
+    "name": "invalid_svg_width",
+    "operation": "replace",
+    "target": "profile/contributions-dark.svg",
+    "before": "width=\"900\"",
+    "after": "width=\"0\"",
+    "expected": "invalid positive width",
+    "valid": false
+  },
+  {
+    "name": "invalid_svg_viewbox",
+    "operation": "replace",
+    "target": "profile/contributions-dark.svg",
+    "before": "viewBox=\"0 0 900 224\"",
+    "after": "viewBox=\"0 0 0 224\"",
+    "expected": "invalid viewBox",
+    "valid": false
+  },
+  {
+    "name": "svg_wrong_aspect",
+    "operation": "replace",
+    "target": "profile/contributions-dark.svg",
+    "before": "viewBox=\"0 0 900 224\"",
+    "after": "viewBox=\"0 0 600 224\"",
+    "expected": "aspect ratio disagrees",
+    "valid": false
+  },
+  {
+    "name": "svg_no_title",
+    "operation": "replace",
+    "target": "profile/contributions-dark.svg",
+    "before": "<title id=\"title\">GitHub contribution activity for ahmadabdullayew</title>",
+    "after": "<g id=\"title\">Ahmad Abdullayev — Evidence-first machine learning systems</g>",
+    "expected": "lacks meaningful <title>",
+    "valid": false
+  },
+  {
+    "name": "svg_no_description",
+    "operation": "replace",
+    "target": "profile/contributions-dark.svg",
+    "before": "<desc id=\"desc\">Static calendar: 122 contributions during 2025-10-05 to 2026-10-09. The\n    README links to an accessible Markdown summary containing numeric monthly and daily counts.\n    Snapshot retrieved (UTC): unknown (archived snapshot; API retrieval time was not recorded).</desc>",
+    "after": "<g id=\"desc\">Static calendar: 122 contributions during 2025-10-05 to 2026-10-09. The\n    README links to an accessible Markdown summary containing numeric monthly and daily counts.\n    Snapshot retrieved (UTC): unknown (archived snapshot; API retrieval time was not recorded).</g>",
+    "expected": "lacks meaningful <desc>",
+    "valid": false
+  },
+  {
+    "name": "svg_unresolved_aria_id",
+    "operation": "replace",
+    "target": "profile/contributions-dark.svg",
+    "before": "aria-labelledby=\"title desc\"",
+    "after": "aria-labelledby=\"title absent\"",
+    "expected": "aria-labelledby must reference",
+    "valid": false
+  },
+  {
+    "name": "svg_duplicated_id",
+    "operation": "replace",
+    "target": "profile/contributions-dark.svg",
+    "before": "<desc id=\"desc\">",
+    "after": "<desc id=\"title\">",
+    "expected": "duplicate id",
+    "valid": false
+  },
+  {
+    "name": "svg_missing_role",
+    "operation": "replace",
+    "target": "profile/contributions-dark.svg",
+    "before": "role=\"img\"",
+    "after": "role=\"presentation\"",
+    "expected": "must declare role",
+    "valid": false
+  },
+  {
+    "name": "svg_dtd",
+    "operation": "prepend",
+    "target": "profile/contributions-dark.svg",
+    "before": "",
+    "after": "<!DOCTYPE svg [<!ENTITY attack \"x\">]>\n",
+    "expected": "prohibited DTD",
+    "valid": false
+  },
+  {
+    "name": "svg_script",
+    "operation": "replace",
+    "target": "profile/contributions-dark.svg",
+    "before": "</svg>",
+    "after": "<script>malicious()</script></svg>",
+    "expected": "prohibited <script>",
+    "valid": false
+  },
+  {
+    "name": "svg_event_handler",
+    "operation": "replace",
+    "target": "profile/contributions-dark.svg",
+    "before": "role=\"img\"",
+    "after": "role=\"img\" onload=\"attack()\"",
+    "expected": "event attribute onload",
+    "valid": false
+  },
+  {
+    "name": "heading_only_in_blockquote",
+    "operation": "replace",
+    "target": "README.md",
+    "before": "## About",
+    "after": "> ## About",
+    "expected": "section order",
+    "valid": false
+  },
+  {
+    "name": "duplicate_html_src_attribute",
+    "operation": "replace",
+    "target": "README.md",
+    "before": "src=\"./profile/contributions-light.svg\"",
+    "after": "src=\"./profile/contributions-light.svg\" src=\"./profile/contributions-light.svg\"",
+    "expected": "duplicate HTML attribute",
+    "valid": false
+  },
+  {
+    "name": "markdown_reference_image_valid",
+    "operation": "append",
+    "target": "README.md",
+    "before": "",
+    "after": "\n![Architectural SVG][registered]\n\n[registered]: ./profile/contributions-dark.svg\n",
+    "expected": "",
+    "valid": true
+  },
+  {
+    "name": "markdown_image_alt_required",
+    "operation": "append",
+    "target": "README.md",
+    "before": "",
+    "after": "\n![](./profile/contributions-light.svg)\n",
+    "expected": "image lacks meaningful alternative text",
+    "valid": false
+  },
+  {
+    "name": "unknown_html_element_mentioned_in_comment",
+    "operation": "append",
+    "target": "README.md",
+    "before": "",
+    "after": "\n<!-- <iframe src=\"https://example.org/\"></iframe> -->\n",
+    "expected": "",
+    "valid": true
+  },
+  {
+    "name": "invalid_svg_nonfinite_viewbox",
+    "operation": "replace",
+    "target": "profile/contributions-dark.svg",
+    "before": "viewBox=\"0 0 900 224\"",
+    "after": "viewBox=\"0 0 NaN 224\"",
+    "expected": "invalid viewBox",
+    "valid": false
+  }
+]
