@@ -23,7 +23,7 @@ class TestReadmeValidationCases(unittest.TestCase):
         self.root = Path(self.folder.name)
         for file_name in ("README.md", "profile-spec.json", "PROFILE_ARCHITECTURE.md", "CV.md", "PROJECT_EVIDENCE.md"):
             shutil.copy2(ROOT / file_name, self.root / file_name)
-        for subdir in ("profile", "scripts", ".github/workflows"):
+        for subdir in ("assets", "profile", "scripts", ".github/workflows"):
             shutil.copytree(ROOT / subdir, self.root / subdir, dirs_exist_ok=True)
 
     def test_cases(self):

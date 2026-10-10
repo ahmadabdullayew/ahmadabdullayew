@@ -1,5 +1,12 @@
 # Ahmad Abdullayev
 
+<picture>
+  <source media="(max-width: 640px) and (prefers-color-scheme: dark)" srcset="./assets/identity-mobile-dark.svg" />
+  <source media="(max-width: 640px)" srcset="./assets/identity-mobile-light.svg" />
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/identity-dark.svg" />
+  <img src="./assets/identity-light.svg" alt="Build. Test. Explain. A visual identity for work in machine learning, evaluation and autonomous systems." width="100%" />
+</picture>
+
 **Computer Engineering · Python & machine-learning systems · Baku, Azerbaijan**
 
 I build inspectable AI workflows, evaluation tooling and Python systems. My work focuses on **what a system can demonstrate**: source code, reproducible checks, and explicit limits.
@@ -71,6 +78,17 @@ I'm a Computer Engineering student at **Khazar University** interested in reliab
 ## Technical Foundation
 
 **Directly evidenced:** `Python` · `FastAPI` · testing/evaluation · structured data processing · rule-based pipelines · Git. Project manifests and source also contain `SQLite`, `SQLAlchemy`, `NumPy` and `scikit-learn`; listing a dependency does not itself prove mastery. [Trace technologies to code](./PROJECT_EVIDENCE.md#skills-and-source-traceability).
+
+**My working approach:**
+
+<picture>
+  <source media="(max-width: 640px) and (prefers-color-scheme: dark)" srcset="./assets/method-mobile-dark.svg" />
+  <source media="(max-width: 640px)" srcset="./assets/method-mobile-light.svg" />
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/method-dark.svg" />
+  <img src="./assets/method-light.svg" alt="Working principles: define the question and risk, establish a testable baseline, evaluate with evidence, then review limitations." width="100%" />
+</picture>
+
+These are working principles, not a claim that every public project has completed every stage.
 
 ## GitHub Activity
 

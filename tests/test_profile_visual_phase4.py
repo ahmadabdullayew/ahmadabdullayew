@@ -30,7 +30,8 @@ class VisualPhase4Tests(unittest.TestCase):
         self.assertIn("Asan-Appeal", top)
         self.assertIn("Bahar", top)
         self.assertIn("./CV.md", top)
-        self.assertNotIn("<img", top)
+        self.assertIn("./assets/identity-light.svg", top)
+        self.assertIn("Build. Test. Explain.", top)
 
     def test_projects_are_discoverable_headings(self):
         featured = self.readme.split("## Featured Projects", 1)[1].split("## ML Experience", 1)[0]
@@ -40,16 +41,17 @@ class VisualPhase4Tests(unittest.TestCase):
 
     def test_all_images_are_owned_and_local(self):
         assets = {x["path"] for x in self.spec["assets"]}
-        self.assertEqual(len(assets), 4)
+        self.assertEqual(len(assets), 12)
         for item in assets:
             self.assertIn(f'./{item}', self.readme)
             self.assertTrue((ROOT / item).is_file())
         self.assertNotIn('src="https://', self.readme)
         self.assertNotIn('readme-typing-svg', self.readme)
-        self.assertFalse((ROOT / 'assets').exists())
+        self.assertEqual(len(list((ROOT / 'assets').glob('*.svg'))), 8)
 
     def test_responsive_source_order_matches_dark_and_light(self):
-        sources = re.findall(r'<source media="([^"]+)" srcset="([^"]+)"', self.readme)
+        activity = self.readme.split('## GitHub Activity', 1)[1].split('## Current Focus', 1)[0]
+        sources = re.findall(r'<source media="([^"]+)" srcset="([^"]+)"', activity)
         self.assertEqual(sources, [
             ('(max-width: 640px) and (prefers-color-scheme: dark)', './profile/contributions-mobile-dark.svg'),
             ('(max-width: 640px)', './profile/contributions-mobile-light.svg'),
@@ -88,7 +90,7 @@ class VisualPhase4Tests(unittest.TestCase):
 
     def test_svg_totals_match_text_summary(self):
         count = re.search(r'Reported contribution total:\*\* (\d+)', self.summary).group(1)
-        for asset in self.spec["assets"]:
+        for asset in [a for a in self.spec["assets"] if a["kind"] == "generated"]:
             xml = ET.parse(ROOT / asset['path']).getroot()
             desc = xml.find(SVG+'desc')
             self.assertIn(count, ''.join(desc.itertext()))

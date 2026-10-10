@@ -20,7 +20,8 @@ class EvidenceFirstUxTests(unittest.TestCase):
             self.assertIn(slug, intro)
         self.assertIn('[Project evidence](./PROJECT_EVIDENCE.md)', intro)
         self.assertIn('[Technical CV](./CV.md)', intro)
-        self.assertNotRegex(intro, r'<(?:img|picture|details)\b')
+        self.assertIn('assets/identity-light.svg', intro)
+        self.assertNotIn('<details', intro)
 
     def test_reading_effort_is_bounded_and_sections_are_plainly_visible(self):
         self.assertLess(len(README.split()), 950)

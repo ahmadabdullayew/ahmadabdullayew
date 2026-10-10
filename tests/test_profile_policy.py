@@ -25,7 +25,7 @@ class ProfileContractTests(unittest.TestCase):
         for supporting_document in ("CV.md", "PROJECT_EVIDENCE.md", "profile/contributions-summary.md"):
             (self.root / supporting_document).parent.mkdir(parents=True, exist_ok=True)
             shutil.copy2(ROOT / supporting_document, self.root / supporting_document)
-        for directory in ("profile", "scripts", ".github/workflows"):
+        for directory in ("assets", "profile", "scripts", ".github/workflows"):
             (self.root / directory).mkdir(parents=True, exist_ok=True)
         for spec in json.loads((ROOT / "profile-spec.json").read_text())["assets"]:
             source = ROOT / spec["path"]
