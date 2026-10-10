@@ -1,0 +1,2 @@
+# Read-only CommonMark parser used by the profile quality gate.
+markdown-it-py==4.2.0

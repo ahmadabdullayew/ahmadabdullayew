@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="362" height="323" viewBox="0 0 362 323"
+    role="img" aria-labelledby="title desc">
+  <title id="title">Recent GitHub activity for ahmadabdullayew</title>
+  <desc id="desc">Static six-month numerical summary. 122 contributions in the reporting period 2025-10-05 to 2026-10-09.
+    The accompanying Markdown summary provides all monthly and daily counts.
+    Snapshot retrieved (UTC): unknown (archived snapshot; API retrieval time was not recorded).</desc>
+  <rect x="0.5" y="0.5" width="361" height="322" rx="12" stroke="#D0D7DE" fill="#FFFFFF"/>
+  <text x="14" y="31" font-size="21" font-weight="700" fill="#24292F" font-family="Arial,sans-serif">122 contributions</text>
+  <text x="14" y="53" font-size="13" fill="#57606A" font-family="Arial,sans-serif">Reporting period: 2025-10-05 to 2026-10-09</text>
+  <text x="14" y="76" font-size="13" fill="#57606A" font-family="Arial,sans-serif">Latest six months · monthly counts</text>
+  <g font-family="Arial,sans-serif"><rect x="14" y="95" width="160" height="55" rx="9" fill="#FFFFFF" stroke="#D0D7DE"/><text x="26" y="117" font-size="14" fill="#57606A">May 2026</text><text x="26" y="141" font-size="23" font-weight="700" fill="#24292F">26</text><rect x="188" y="95" width="160" height="55" rx="9" fill="#FFFFFF" stroke="#D0D7DE"/><text x="200" y="117" font-size="14" fill="#57606A">Jun 2026</text><text x="200" y="141" font-size="23" font-weight="700" fill="#24292F">0</text><rect x="14" y="160" width="160" height="55" rx="9" fill="#FFFFFF" stroke="#D0D7DE"/><text x="26" y="182" font-size="14" fill="#57606A">Jul 2026</text><text x="26" y="206" font-size="23" font-weight="700" fill="#24292F">6</text><rect x="188" y="160" width="160" height="55" rx="9" fill="#FFFFFF" stroke="#D0D7DE"/><text x="200" y="182" font-size="14" fill="#57606A">Aug 2026</text><text x="200" y="206" font-size="23" font-weight="700" fill="#24292F">7</text><rect x="14" y="225" width="160" height="55" rx="9" fill="#FFFFFF" stroke="#D0D7DE"/><text x="26" y="247" font-size="14" fill="#57606A">Sep 2026</text><text x="26" y="271" font-size="23" font-weight="700" fill="#24292F">0</text><rect x="188" y="225" width="160" height="55" rx="9" fill="#FFFFFF" stroke="#D0D7DE"/><text x="200" y="247" font-size="14" fill="#57606A">Oct 2026</text><text x="200" y="271" font-size="23" font-weight="700" fill="#24292F">0</text></g>
+  <text x="14" y="309" font-size="12" fill="#57606A" font-family="Arial,sans-serif">Exact dated counts: see linked text summary</text>
+</svg>

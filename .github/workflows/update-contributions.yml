@@ -1,69 +1,107 @@
 name: Update contribution calendar
 
+# Exact publication-owned asset inventory (validated by profile policy):
+# - profile/contributions-dark.svg
+# - profile/contributions-light.svg
+# - profile/contributions-mobile-dark.svg
+# - profile/contributions-mobile-light.svg
+# - profile/contributions-summary.md
+
 on:
   workflow_dispatch:
-
   schedule:
     - cron: "17 4 * * *"
 
+# Single owner of the five generated files. Do not cancel a publication mid-push.
 concurrency:
-  group: profile-contribution-calendar
-  cancel-in-progress: true
+  group: profile-activity-publication
+  cancel-in-progress: false
 
 permissions:
   contents: read
 
 jobs:
   generate:
-
-    name: Generate animated contribution calendar
-
+    if: github.repository == 'ahmadabdullayew/ahmadabdullayew' && github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
-
-    timeout-minutes: 10
-
+    timeout-minutes: 15
     permissions:
-      contents: write
-
+      contents: read
     steps:
-
-      - name: Check out profile repository
-
-        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
-
-      - name: Generate contribution calendar SVGs
-
+      - name: Read-only checkout of trusted main
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        with:
+          persist-credentials: false
+          fetch-depth: 0
+      - name: Python 3.12
+        uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065 # v5.6.0
+        with:
+          python-version: '3.12'
+      - name: Install validation and visual dependencies
+        run: python -m pip install -r requirements-validation.txt -r requirements-visual.txt
+      - name: Refresh calendar from GitHub API
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           PROFILE_USERNAME: ahmadabdullayew
-
+        run: python scripts/generate_contributions.py
+      - name: Independently verify entire candidate in unprivileged job
         run: |
-          python3 scripts/generate_contributions.py
+          python -m unittest discover -s tests -v
+          python scripts/check_visuals.py
+          python scripts/validate_profile.py
+      - name: Seal allowlisted candidate with SHA-256 manifest and UTC freshness
+        env:
+          BUNDLE_PATH: ${{ runner.temp }}/profile-assets.zip
+        run: python scripts/profile_release.py bundle --source-sha "$(git rev-parse HEAD)" --output "$BUNDLE_PATH"
+      - name: Upload immutable candidate (no secrets)
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
+        with:
+          name: contribution-candidate
+          path: ${{ runner.temp }}/profile-assets.zip
+          retention-days: 2
+          if-no-files-found: error
 
-      - name: Commit changed contribution assets
-
-        shell: bash
-
+  publish:
+    needs: generate
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    permissions:
+      contents: write
+      pull-requests: write
+    outputs:
+      status: ${{ steps.publish.outputs.status }}
+      commit_sha: ${{ steps.publish.outputs.commit_sha }}
+    steps:
+      - name: Checkout trusted repository for publication
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        with:
+          fetch-depth: 0
+          persist-credentials: true
+      - name: Python 3.12
+        uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065 # v5.6.0
+        with:
+          python-version: '3.12'
+      - name: Download candidate from same workflow run
+        uses: actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093 # v4.3.0
+        with:
+          name: contribution-candidate
+          path: ${{ runner.temp }}/candidate
+      - name: Install validators used for post-rebase checks
+        run: python -m pip install -r requirements-validation.txt -r requirements-visual.txt
+      - name: Revalidate, rebase safely on latest main, and publish or open PR
+        id: publish
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GITHUB_RUN_ID: ${{ github.run_id }}
+          GITHUB_RUN_ATTEMPT: ${{ github.run_attempt }}
+          BUNDLE_PATH: ${{ runner.temp }}/candidate/profile-assets.zip
+        run: python scripts/profile_release.py publish --bundle "$BUNDLE_PATH" --run-id "${GITHUB_RUN_ID}-${GITHUB_RUN_ATTEMPT}"
+      - name: Verify real public GitHub profile and committed assets after direct publication
+        if: steps.publish.outputs.status == 'direct-main'
+        run: python scripts/profile_release.py verify-public --account ahmadabdullayew --sha "${{ steps.publish.outputs.commit_sha }}" --require-fresh
+      - name: Explain PR fallback and manual merge requirement
+        if: steps.publish.outputs.status == 'pull-request'
         run: |
-
-          if [[ -z "$(git status --porcelain -- profile/)" ]]; then
-
-            echo "Contribution calendar is already current."
-
-            exit 0
-
-          fi
-
-          git config user.name "github-actions[bot]"
-
-          git config user.email \
-            "41898282+github-actions[bot]@users.noreply.github.com"
-
-          git add \
-            profile/contributions-dark.svg \
-            profile/contributions-light.svg
-
-          git commit \
-            -m "chore(profile): refresh contribution calendar"
-
-          git push
+          echo '### Protected branch review required' >> "$GITHUB_STEP_SUMMARY"
+          echo 'Candidate was published ONLY on an automation branch and a PR was created; it is not yet live on main.' >> "$GITHUB_STEP_SUMMARY"
+          echo 'If checks are not triggered for a GITHUB_TOKEN-created PR, run Profile quality manually on the PR branch before merging.' >> "$GITHUB_STEP_SUMMARY"
