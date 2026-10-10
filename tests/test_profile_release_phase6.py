@@ -144,7 +144,7 @@ class Phase6ReleaseTests(unittest.TestCase):
         def urlopen(request,timeout=15):
             url=request.full_url
             if url=='https://github.com/ahmadabdullayew':return Response(b'<html><article>ASANAppeal Bahar</article></html>')
-            if url=='https://api.github.com/repos/ahmadabdullayew/ahmadabdullayew/commits/main':return Response(json.dumps({'sha':self.source}).encode())
+            if url=='https://api.github.com/repos/ahmadabdullayew/ahmadabdullayew/git/ref/heads/main':return Response(json.dumps({'object': {'sha': self.source, 'type': 'commit'}}).encode())
             if url.endswith('/README.md'):return Response(b'# Profile\n## Featured Projects\nASANAppeal Bahar')
             name='profile/'+url.split('/profile/',1)[1]
             return Response((self.root/name).read_bytes())
